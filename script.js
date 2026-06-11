@@ -90,10 +90,31 @@ const translation = {
 
 let currentLang = "en";
 
-document.querySelector(".btnLang").addEventListener("click", () => {
-  currentLang = currentLang === "en" ? "pt" : "en";
-
+function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.innerText = translation[currentLang][el.dataset.i18n];
   });
+}
+
+document.querySelectorAll(".btnLang, .btnLangSmall").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    currentLang = currentLang === "en" ? "pt" : "en";
+    applyLang();
+  });
 });
+
+// document.querySelector(".btnLang").addEventListener("click", () => {
+//   currentLang = currentLang === "en" ? "pt" : "en";
+
+//   document.querySelectorAll("[data-i18n]").forEach((el) => {
+//     el.innerText = translation[currentLang][el.dataset.i18n];
+//   });
+// });
+
+// document.querySelector(".btnLangSmall").addEventListener("click", () => {
+//   currentLang = currentLang === "en" ? "pt" : "en";
+
+//   document.querySelectorAll("[data-i18n]").forEach((el) => {
+//     el.innerText = translation[currentLang][el.dataset.i18n];
+//   });
+// });
