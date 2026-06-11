@@ -1,0 +1,175 @@
+/* MEDIA QUERIE - PRINT TO PDF */
+@media print {
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  .myName {
+    font-size: 2rem;
+  }
+  .aboutMeTitle,
+  .primaryTitle,
+  .secondaryTitle {
+    font-size: 1.5rem;
+  }
+  .themeTitle {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+  .contentText,
+  .secondaryTitle span {
+    font-size: 1.3rem;
+  }
+  /* onGoing */
+  .onG,
+  .addContentDate {
+    font-size: 1.2rem;
+  }
+  /* margin-bottom 0.5rem */
+  .m-b05,
+  .contentText {
+    margin-bottom: 0.3rem;
+  }
+  .mainSentence {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  .myContactsAndNavigation {
+    margin-bottom: 0;
+  }
+  /* all btn + nav links */
+  .pdfBtnContainer {
+    margin-bottom: 0;
+  }
+  a,
+  .btnLang,
+  .printPDFbtn,
+  .btn,
+  footer {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
+/*  */
+/* MEDIA QUERIE - SCREENS */
+@media screen and (max-width: 840px) {
+  .contentText-no-mb,
+  .aboutMeTxt {
+    font-size: 1.3rem;
+  }
+  .aboutMeTitle {
+    font-size: 1.8rem;
+  }
+
+  .btn,
+  .btnLang,
+  .printPDFbtn,
+  .invisibleGridOnQuery,
+  .invisibleColumnOnQuery {
+    display: none;
+  }
+  .makeVisibleSkillsOnQuery,
+  .makeVisibleTxtOnQuery,
+  .structure2cols {
+    display: block;
+  }
+  .linksSmallContainer,
+  .linksSmall {
+    display: flex;
+    align-items: center;
+  }
+  .linksSmall {
+    height: 3rem;
+    width: fit-content;
+    text-decoration: none;
+    color: #666;
+    margin-right: 0.7rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .linksSmall:hover {
+    background-color: #666;
+    color: white;
+    transition: 0.3s ease;
+  }
+  .myContactsAndNavigation {
+    height: 2rem;
+  }
+}
+/*  */
+@media screen and (max-width: 600px) {
+  .btnLang,
+  .printPDFbtn,
+  .btn {
+    height: 3rem;
+    margin-right: 0.7rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border: 1px solid #333;
+  }
+  .contentText-no-mb,
+  .contentText {
+    font-size: 1.2rem;
+  }
+  .onG,
+  .addContentDate {
+    font-size: 1.1rem;
+  }
+  .themeTitle,
+  .secondaryTitle {
+    font-size: 1.3rem;
+  }
+  .primaryTitle {
+    font-size: 1.5rem;
+  }
+  .mainSentence,
+  .aboutMeTitle {
+    font-size: 1.7rem;
+  }
+  .onG {
+    margin-left: 2rem;
+  }
+}
+/*  */
+@media screen and (max-width: 480px) {
+  .aboutMeTitle,
+  .mainSentence {
+    font-size: 1.6rem;
+  }
+  .onMobileNone,
+  .mobileNone,
+  .btn,
+  .btnLang,
+  .printPDFbtn {
+    display: none;
+  }
+  .myContactsAndNavigation {
+    height: 2rem;
+  }
+  .datesQueryMobile {
+    display: block;
+  }
+}
+/*  */
+@media screen and (max-width: 430px) {
+  .miniMobileNone {
+    display: none;
+  }
+}
+/*  */
+@media screen and (max-width: 330px) {
+  .lastQueryNone,
+  .mainSentence {
+    display: none;
+  }
+  .mainSentenceMobile {
+    display: block;
+  }
+}

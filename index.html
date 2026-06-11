@@ -10,8 +10,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"/>
-    <link rel="stylesheet" href="cv-page-pdf.css" />
 
+
+    <link rel="stylesheet" href="cv-page-pdf.css" />
+    <link rel="stylesheet" href="cv-page-queries.css" />
   </head>
 
   <body>
@@ -22,24 +24,48 @@
       <!-- ---------------------- -->
       <div class="myContactsAndNavigation">
         <div class="myAddressPhone">
-          <p class="personalInfo">Porto, V.N.Gaia &nbsp | &nbsp diana.doris@gmail.com &nbsp | &nbsp linkedin.com/in/diana-doris/</p>
+          <p class="personalInfo">Porto, V.N.Gaia &nbsp | &nbsp (+351) 963769434 &nbsp | &nbsp diana.doris@gmail.com &nbsp | &nbsp linkedin.com/in/diana-doris/</p>
         </div>
       </div>
       <!--  -->
       <div class="pdfBtnContainer">
         <button class="btn"><a href="index.html"><p>home</p></a></button>
-        <button class="btn"><a href="#"><p>bio</p></a></button>
-        <button class="btnLang"><p>PT /<br>EN</p></a></button>
+        <button class="btn"><a href="blocks.html"><p>bio</p></a></button>
+        <button class="btnLang"><p>pt /<br>en</p></a></button>
         <button class="printPDFbtn" onclick="window.print()">
           print<br />pdf</button>
+          <!-- btns menu -->
+        <!-- media query -->
+        <div class="linksSmallContainer">
+          <a class="linksSmall" href=""><span> &nbsp </span>home<span class="miniMobileNone"> &nbsp </span>|<span class="miniMobileNone">&nbsp</span></a>
+          <a class="linksSmall" href=""><span class="lastQueryNone"> &nbsp </span>bio<span class="miniMobileNone" > &nbsp </span>|<span class="miniMobileNone">&nbsp</span></a>
+          <a class="linksSmall" href=""><span class="lastQueryNone"> &nbsp </span class >pt/ en<span class="miniMobileNone"> &nbsp </span>|<span class="miniMobileNone">&nbsp</span></a>
+          <!-- <a class="linksSmall" href=""><span class="lastQueryNone"> &nbsp </span>print pdf<span class=""> &nbsp</span></a> -->
+        </div>
+        <!-- .media query -->
+      <!-- .btns menu -->
       </div>
-      <!-- .pdfBtnContainer -->
+      <!-- -->
       <p class="mainSentence" data-i18n="mainSentence">Hi, I'm looking forward to be a web developer!</p>
+      <!-- query for mobile -->
+      <p class="mainSentence mainSentenceMobile" data-i18n="mainSentence">Hi, I'm looking forward<br> to be a web developer!</p>
+      <!--  -->
+      <div class="makeVisibleTxtOnQuery" style="text-align:right;">
+        <div style="margin-bottom: 4rem;">
+          <p class="aboutMeTitle meTitle mobileNone" data-i18n="meTitle">about me</p>
+          <p class="aboutMeTxt meTxt01 mobileNone" data-i18n="meTxt01">I'm a former architect on my way to digital reskilling.
+          </p>
+          <p class="aboutMeTxt meTxt02 mobileNone" data-i18n="meTxt02">I consider myself a creative person with a strong sense of responsability.</p>
+          <p class="aboutMeTxt meTxt03 mobileNone" data-i18n="meTxt03">I love critical thinking and enjoy exchanging ideias with others.</p>
+          <p class="aboutMeTxt meTxt04 mobileNone" data-i18n="meTxt04">Curiosity, resilience and adaptability have brought me here.</p>
+        </div>
+      </div>
+      <!--  -->
     </div>
     <!--  -->
     <!-- GRID 2 COLS -  GRID 2 COLS - GRID 2 COLS -->
     <div class="structure2cols" >
-      <!-- ESQUERDA 1FR -->
+      <!-- LEFT -->
       <!-- MAIN 1 COL -->
       <main class="main-1col">
         <!-- TITLE -->
@@ -51,12 +77,13 @@
         <div>
           <p class="primaryTitle devOut" data-i18n="devOut"> low code developer_ outsystems</p>
           <div class="secondaryTitle" >
-            <p>cesae digital &nbsp<span>_1100h</span></p>
-            <p class="addContentDate">15.01 - 16-06<span class="onG" data-i18n="onG">< on going ></span></p>
+            <p class="datesQueryMobile" >15.01 - 16-06<span class="onG miniMobileNone" data-i18n="onG">< on going ></span> &nbsp | &nbsp cesae digital &nbsp<span>_1100h</span></p>
+            <p class="mobileNone">cesae digital &nbsp<span>_1100h</span></p>
+            <p class="addContentDate mobileNone">15.01 - 16-06<span class="onG" data-i18n="onG">< on going ></span></p>
           </div>
           <p class="contentText alG" data-i18n="alG">algorithms fundamentals and object-oriented development
           </p>
-          <p class="contentText devMeth" data-i18n="devMeth">software development: methods, practices and collaboration
+          <p class="contentText devMeth" data-i18n="devMeth">software development: methods, pratices and collaboration
           </p>
           <p class="contentText sysAnal" data-i18n="sysAnal">information systems, modeling and analysis</p>
           <p class="contentText dataMan" data-i18n="dataMan">database design and management | advanced transact SQL
@@ -68,8 +95,9 @@
           <p class="primaryTitle ccod" data-i18n="ccod">creative coding</p>
           <!--  -->
           <div class="secondaryTitle">
-            <p >esad &nbsp<span>_24h</span></p>
-            <p class="addContentDate" >25.02 - 22.04</p>
+            <p class="datesQueryMobile" >25.02 - 22.04 &nbsp | &nbsp esad &nbsp<span>_24h</span></p>
+            <p class="mobileNone" >esad &nbsp<span>_24h</span></p>
+            <p class="addContentDate mobileNone" >25.02 - 22.04</p>
           </div>
           <p class="contentText ccodP" data-i18n="ccodP">
           processing | still and moving images through generative and parametric design
@@ -79,8 +107,9 @@
           user experience & user interface design
           </p>
           <div class="secondaryTitle">
-            <p >edit &nbsp<span>_200h</span></p>
-            <p class="addContentDate ">03.2022 - 07.2022</p>
+            <p class="datesQueryMobile" >03.2022 - 07.2022 &nbsp | &nbsp edit &nbsp<span>_200h</span></p>
+            <p class="mobileNone" >edit &nbsp<span>_200h</span></p>
+            <p class="addContentDate mobileNone">03.2022 - 07.2022</p>
           </div>
           <p class="contentText desThink" data-i18n="desThink">user experience | design thinking | user interface | visual
           design | design systems | figma
@@ -94,100 +123,144 @@
           <!-- MODULAR CONTENT -->
           <p class="primaryTitle titleAI" data-i18n="titleAI">AI foundations for everyone</p>
           <div class="secondaryTitle">
-            <p>ibm | coursera</p>
-            <p class="addContentDate">15.04 - <span class="onG" data-i18n="onG">< on going ></span></p>
+            <p class="datesQueryMobile" >15.04 - <span class="onG" data-i18n="onG">< on going ></span> &nbsp | &nbsp ibm | coursera</p>
+            <p class="mobileNone">ibm | coursera</p>
+            <p class="addContentDate mobileNone">15.04 - <span class="onG" data-i18n="onG">< on going ></span></p>
           </div>
           <p class="contentText txtAI" data-i18n="txtAI">introduction to Artificial Intelligence (AI)</p>
           <!-- MODULAR CONTENT -->
           <!-- MODULAR CONTENT -->
-          <p class="primaryTitle titleWeb" data-i18n="titleWeb">build responsive real-world websites - HTML and CSS</p>
+
+          <p class="primaryTitle titleWeb" data-i18n="titleWeb">build responsive real-world websites - html and css</p>
           <div class="secondaryTitle">
-            <p>udemy &nbsp<span>_37.5h</span></p>
-            <p class="addContentDate" >01.2025</p>
+            <p class="datesQueryMobile" >01.2025 &nbsp | &nbsp udemy &nbsp<span>_37.5h</span></p>
+            <p class="mobileNone">udemy &nbsp<span>_37.5h</span></p>
+            <p class="addContentDate mobileNone" >01.2025</p>
           </div>
           <!-- MODULAR CONTENT -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <div class="makeVisibleSkillsOnQuery" style="margin-top:3rem ;">
+            <div class="skillsGrid">
+              <!-- left -->
+              <div class="skillsQuery m-r4">
+                <p class="primaryTitle m-b07 compDig" data-i18n="compDig">digital skills</p>
+                <hr>
+                <p class="m-b05" >Outsystems &nbsp | &nbsp SQL &nbsp | &nbsp Github</p>
+                <!-- <p class="m-b05" >React</p> -->
+                <!-- <p class="m-b05">Javascript &nbsp | &nbsp React</p> -->
+                <p class="m-b05">Figma  &nbsp | &nbsp HTML &nbsp | &nbsp CSS &nbsp | &nbsp Bootstrap &nbsp | &nbsp Javascript &nbsp | &nbsp React</p>
+                <!-- <p class="m-b05" > Bootstrap</p> -->
+                <!-- <p class="m-b05"> CSS</p> -->
+                <!-- <p class="m-b05" >Github</p> -->
+                <p class="m-b05" >Processing</p>
+                <!-- <p class="m-b05">Processing</p> -->
+              </div>
+              <!-- .left -->
+              <!-- right -->
+              <div class="skillsQuery m-r4">
+                <p class="primaryTitle m-b07 othDigSk" data-i18n="othDigSk">other digital skills </p>
+                <hr>
+                <p class="m-b05">autocad &nbsp | &nbsp rhinoceros</p>
+                <!-- <p class="m-b05">rhinoceros</p> -->
+                <p >Indesign</p>
+              <!-- .right -->
+              </div>
+
+              <div  class="skillsQuery">
+                <p class="primaryTitle m-b07 othSk" data-i18n="othSk">other skills</p>
+                <hr>
+                <p class="lanE" data-i18n="lanE">english</p>
+              </div>
+
+            </div>
+          </div>
+          <!--  -->
           <!-- TITLE -->
           <div class="themeTitle workX" data-i18n="workX">
             <p>work experience</p>
           </div>
-          <p class=" secondaryTitle admCust" data-i18n="admCust">
+          <p class=" secondaryTitle admCust" data-i18n="admCust" >
           administrative | customer support
           </p>
           <!--  -->
           <div class=" spaceBetween m-b05">
-            <p class="contentText-no-mb accS" data-i18n="accS" >accountant support in PortSpar Retail, lda</p>
-            <p class="addContentDate">02.20 - 03.23</p>
+            <p class="datesQueryMobile" >02.20 - 03.23  &nbsp | &nbsp accountant support in PortSpar Retail, lda</p>
+            <p class="contentText-no-mb accS mobileNone" data-i18n="accS" >accountant support in PortSpar Retail, lda</p>
+            <p class="addContentDate mobileNone">02.20 - 03.23</p>
           </div>
           <!--  -->
           <div class="spaceBetween m-b05">
-            <p class="contentText-no-mb cusSup" data-i18n="cusSup" >customer support - portuguese/ english market, AirBnb, Sitel</p>
-            <p class="addContentDate">01.18 - 02.20</p>
+            <p class="datesQueryMobile" >01.18 - 02.20 &nbsp | &nbsp customer support - portuguese/ english market, AirBnb, Sitel</p>
+            <p class="contentText-no-mb m-b07 cusSup mobileNone" data-i18n="cusSup" >customer support - portuguese/ english market, AirBnb, Sitel</p>
+            <p class="addContentDate mobileNone">01.18 - 02.20</p>
           </div>
           <!-- MODULAR CONTENT -->
-          <!-- MODULAR CONTENT -->
-          <p class=" secondaryTitle archJew" data-i18n="archJew"  >architecture | jewelry Design</p>
+          <p class="secondaryTitle archJew" data-i18n="archJew"  >architecture | jewelry Design</p>
           <div class="spaceBetween m-b05">
-            <p class="contentText-no-mb jewFree" data-i18n="jewFree">jewelry designer and maker, freelance "Diana Dóris"</p>
-            <p class="addContentDate pres" data-i18n="pres" >present - 2012</p>
+            <p class="datesQueryMobile" >present - 2012  &nbsp | &nbsp jewelry designer and maker, freelance "Diana Dóris"</p>
+            <p class="contentText-no-mb jewFree mobileNone" data-i18n="jewFree">jewelry designer and maker, freelance "Diana Dóris"</p>
+            <p class="addContentDate pres mobileNone" data-i18n="pres" >present - 2012</p>
           </div>
-          <!-- MODULAR CONTENT -->
-          <!-- MODULAR CONTENT -->
-          <div class="spaceBetween m-b05">
-            <p class="contentText-no-mb jewAC" data-i18n="jewAC">jewelry maker in António Castro, Gondomar</p>
-            <p class="addContentDate">2010 - 2012</p>
-          </div>
-          <!-- MODULAR CONTENT -->
           <!-- MODULAR CONTENT -->
           <div class="spaceBetween m-b05">
-            <p class="contentText-no-mb archJFG" data-i18n="archJFG" >architect in José Fernando Gonçalves atelier, Porto</p>
-            <p class="addContentDate">2006 - 2008</p>
+            <p class="datesQueryMobile" >2010 - 2012  &nbsp | &nbsp jewelry maker in António Castro, Gondomar</p>
+            <p class="contentText-no-mb jewAC mobileNone" data-i18n="jewAC">jewelry maker in António Castro, Gondomar</p>
+            <p class="addContentDate mobileNone">2010 - 2012</p>
           </div>
           <!-- MODULAR CONTENT -->
+          <div class="spaceBetween m-b05">
+            <p class="datesQueryMobile" >2006 - 2008  &nbsp | &nbsp arquitect in José Fernando Gonçalves atelier, Porto</p>
+            <p class="contentText-no-mb archJFG mobileNone" data-i18n="archJFG" >arquitect in José Fernando Gonçalves atelier, Porto</p>
+            <p class="addContentDate mobileNone">2006 - 2008</p>
+          </div>
           <!-- MODULAR CONTENT -->
           <div class="themeTitle edu" data-i18n="edu">
             <p>education</p>
           </div>
           <!-- MODULAR CONTENT -->
-          <!-- MODULAR CONTENT -->
           <p class="primaryTitle jewDes" data-i18n="jewDes" >jewelry design</p>
           <div class="secondaryTitle">
-            <p>UCP</p>
-            <p class="addContentDate">2010</p>
+            <p class="datesQueryMobile" >2010  &nbsp | &nbsp UCP</p>
+            <p class="mobileNone"  >UCP</p>
+            <p class="addContentDate mobileNone">2010</p>
           </div>
-          <!-- MODULAR CONTENT -->
           <!-- MODULAR CONTENT -->
           <p class="primaryTitle archTitle"  data-i18n="archTitle"  >architecture</p>
           <div class="secondaryTitle">
-            <p>FCTUC</p>
-            <p class="addContentDate">2007</p>
+            <p class="datesQueryMobile" >2007  &nbsp | &nbsp FCTUC</p>
+            <p class="mobileNone" >FCTUC</p>
+            <p class="addContentDate mobileNone">2007</p>
           </div>
         </main>
         <!--  -->
-        <aside class="aside-1col-container">
+        <aside class="aside-1col-container invisibleGridOnQuery">
         <!-- TITLE - FULL WIDTH -->
-          <div class="aside-1col">
+          <div class="aside-1col " >
             <div style="margin-bottom: 4rem;">
               <p class="aboutMeTitle meTitle" data-i18n="meTitle">about me</p>
               <p class="aboutMeTxt meTxt01" data-i18n="meTxt01">I'm a former architect on my way to digital reskilling.
             </p>
-            <p class="aboutMeTxt meTxt02" data-i18n="meTxt02">I consider myself a creative person with a strong sense of responsibility.</p>
-            <p class="aboutMeTxt meTxt03" data-i18n="meTxt03">I love critical thinking and enjoy exchanging ideas with others.</p>
+            <p class="aboutMeTxt meTxt02" data-i18n="meTxt02">I consider myself a creative person with a strong sense of responsability.</p>
+            <p class="aboutMeTxt meTxt03" data-i18n="meTxt03">I love critical thinking and enjoy exchanging ideias with others.</p>
             <p class="aboutMeTxt meTxt04" data-i18n="meTxt04">Curiosity, resilience and adaptability have brought me here.</p>
           </div>
             <!--  -->
-            <div class="themeTitle titleBorder compDig" data-i18n="compDig">
+            <div class="invisibleGridOnQuery themeTitle titleBorder compDig" data-i18n="compDig">
               <p>digital skills</p>
             </div>
             <!-- .TITLE - FULL WIDTH -->
             <!-- MODULAR CONTENT SECTION -->
-            <div class="contentText">
+            <div class="contentText invisibleColumnOnQuery">
               <p class="m-b05">Outsystems</p>
-              <p class="m-b05">React</p>
+              <p class="m-b05">SQL</p>
               <p class="m-b05">Github</p>
+              <p class="m-b05">React</p>
               <p class="m-b05">Javascript</p>
-              <p class="m-b05">HTML</p>
               <p class="m-b05">Bootstrap</p>
               <p class="m-b05">CSS</p>
+              <p class="m-b05">HTML</p>
               <p class="m-b05">Figma</p>
               <p class="m-b05">Processing</p>
               <!-- MODULAR CONTENT SECTION -->
@@ -216,6 +289,6 @@
           </div>               
         </div>
               
-        <footer class="madeBy" data-i18n="madeBy" style="margin-bottom: 4rem;">*using_ html5, css3, (responsive: media query to pdf), javascript</footer>
+        <footer class="madeBy" data-i18n="madeBy" style="margin-bottom: 4rem;">*using_ html5, css3, (responsive: media querie to pdf), javascript</footer>
     </body>
   </html>

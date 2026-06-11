@@ -24,7 +24,7 @@ body {
   padding-top: 4rem;
   display: flex;
   align-items: end;
-  display: block;
+  display: flex;
 }
 .myName {
   font-size: 2.6rem;
@@ -32,43 +32,28 @@ body {
   color: #111;
 }
 .myName:hover {
-  color: blue;
+  background-color: #333;
+  color: white;
 }
 .myContactsAndNavigation {
   height: 4rem;
   max-width: 100%;
-  margin: 0 auto 2rem auto;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+  /* margin: 0 auto 2rem auto; */
   display: flex;
 }
 .myAddressPhone {
   font-size: 1.2rem;
 }
-/* ******************* */
-.mySmallPresentation {
-  margin-left: 25%;
-}
-.lookingForward {
-  font-size: 2rem;
-  font-weight: 400;
-  margin-bottom: 1rem;
-}
-.lookingForward span {
-  font-weight: 600;
-}
-.presentationText {
-  font-size: 1.7rem;
-  line-height: 1.5;
-  margin-left: 3rem;
-  margin-bottom: 1rem;
-}
-/* BTN */
 .pdfBtnContainer {
   display: flex;
   align-items: center;
   height: 4rem;
   margin-bottom: 4rem;
 }
-/* BTN */
 .btn a {
   text-decoration: none;
   color: white;
@@ -94,7 +79,6 @@ body {
   font-weight: 500;
   cursor: pointer;
 }
-/* BTN */
 .btnLang {
   margin-right: 4rem;
 }
@@ -102,7 +86,7 @@ body {
 .printPDFbtn {
   height: 4rem;
   width: 4rem;
-  border: 3px solid #333;
+  border: 2px solid #333;
   border-radius: 0.5rem;
   font-size: 1.4rem;
   font-weight: 600;
@@ -119,11 +103,13 @@ body {
 /*** .print PDF button ***/
 .printPDFbtn:hover {
   border: none;
-  background-color: #2b0089;
+  background-color: #333;
   color: white;
   transition: 0.3s ease;
 }
-/* BTN */
+.linksSmallContainer {
+  display: none;
+}
 .mainSentence {
   font-size: 1.9rem;
   text-align: right;
@@ -165,7 +151,8 @@ body {
   font-size: 1.3rem;
   align-self: self-end;
 }
-.addContentDate span {
+.onG {
+  font-size: 1.3rem;
   margin-left: 4rem;
 }
 .contentText {
@@ -173,8 +160,16 @@ body {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
 }
+/* margin-bottom */
 .m-b05 {
   margin-bottom: 0.5rem;
+}
+.m-b07 {
+  margin-bottom: 0.7rem;
+}
+hr {
+  width: 100%;
+  column-rule: #333;
 }
 .aside-1col {
   width: 75%;
@@ -211,54 +206,34 @@ footer {
   font-size: 1.2rem;
   /* color: #292562; */
 }
-/* MEDIA QUERIE - PRINT TO PDF */
-/* MEDIA QUERIE - PRINT TO PDF */
-@media print {
-  @page {
-    size: A4;
-    margin: 10mm;
-  }
-  body {
-    margin: 0;
-    width: 100%;
-  }
-  .myName {
-    font-size: 2rem;
-  }
-  .aboutMeTitle,
-  .themeTitle {
-    font-size: 1.6rem;
-    margin-top: 2.6rem;
-    margin-bottom: 0.5rem;
-  }
-  .primaryTitle,
-  .secondaryTitle {
-    font-size: 1.4rem;
-  }
-  .contentText,
-  .secondaryTitle span {
-    font-size: 1.3rem;
-  }
-  .addContentDate {
-    font-size: 1.2rem;
-  }
-  .m-b05,
-  .contentText {
-    margin-bottom: 0.3rem;
-  }
-  .mainSentence {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
-  .myContactsAndNavigation {
-    margin-bottom: 0.5rem;
-  }
-  a,
-  .pdfBtnContainer,
-  .printPDFbtn,
-  .btn,
-  footer {
-    display: none !important;
-    visibility: hidden !important;
-  }
+.skillsGrid {
+  display: flex;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: 2; */
+}
+.mainSentenceMobile,
+.makeVisibleSkillsOnQuery,
+.makeVisibleTxtOnQuery {
+  display: none;
+}
+.skillsQuery {
+  text-align: left;
+  font-size: 1.3rem;
+}
+.m-r4 {
+  margin-right: 4rem;
+}
+
+.datesQueryMobile {
+  display: none;
+  margin-right: 2rem;
+  font-size: 1.2rem;
+  justify-content: left;
+}
+.visibleQuery,
+.invisibleQuery,
+.lastQueryNone,
+.onMobileNone {
+  display: block;
 }
