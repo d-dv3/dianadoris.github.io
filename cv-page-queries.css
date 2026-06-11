@@ -90,7 +90,8 @@
     text-decoration: none;
     color: #666;
     margin-right: 0.7rem;
-    font-size: 1.4rem;
+    /* font-size: 1.4rem; */
+    font-size: 1.6rem;
     font-weight: 700;
     cursor: pointer;
   }
@@ -162,14 +163,17 @@
   .miniMobileNone {
     display: none;
   }
-}
-/*  */
-@media screen and (max-width: 330px) {
-  .lastQueryNone,
+
   .mainSentence {
     display: none;
   }
   .mainSentenceMobile {
     display: block;
+  }
+}
+/*  */
+@media screen and (max-width: 330px) {
+  .lastQueryNone {
+    display: none;
   }
 }

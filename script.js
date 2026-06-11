@@ -84,7 +84,7 @@ const translation = {
     lanE: "inglês",
     othDigSk: "outras competências digitais",
     madeBy:
-      "feito com_ html5, css3, (responsivo: media querie to pdf), javascript",
+      "feito com: html5, css3, (responsivo: media querie to pdf), javascript",
   },
 };
 

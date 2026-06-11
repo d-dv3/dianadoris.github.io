@@ -206,8 +206,8 @@ hr {
   margin-bottom: 0.5rem;
 }
 footer {
-  font-size: 1.2rem;
-  /* color: #292562; */
+  font-size: 1rem;
+  margin-bottom: 4rem;
 }
 .skillsGrid {
   display: flex;
