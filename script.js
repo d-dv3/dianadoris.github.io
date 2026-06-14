@@ -4,13 +4,15 @@ const translation = {
     edu: "education",
     devOut: "low code developer_ outsystems",
     onG: "< on going >",
-    alG: "algorithms fundamentals and object-oriented development",
-    devMeth: "software development: methods, pratices and collaboration",
+    alG: "algorithms fundamentals and object-oriented programming",
+    devMeth: "software development",
     sysAnal: "information systems, modeling and analysis",
-    dataMan: "database design and management | advanced transact SQL",
+    dataMan: "database design | advanced transact SQL",
     ccod: "creative coding",
     ccodP:
-      "processing | still and moving images through generative and parametric design",
+      "processing | editing images through generative and parametric design",
+    //
+    //
     uiUx: "user experience & user interface design",
     desThink:
       "user experience | design thinking | user interface | visual design | design systems | figma",
@@ -47,13 +49,15 @@ const translation = {
     edu: "educação",
     devOut: "desenvolvedor de low code_ outsystems",
     onG: "< a decorrer >",
-    alG: "fundamentos de algoritmia e desenvolvimento orientado a objetos",
-    devMeth: "desenvolvimento de software: métodos, práticas e colaboração",
+    alG: "fundamentos de algoritmia e programação orientada a objetos",
+    devMeth: "desenvolvimento de software",
     sysAnal: "modelação e análise de sistemas de informação",
-    dataMan: "desenho e manutenção de base de dados | advanced transact SQL",
+    dataMan: "desenho de base de dados | advanced transact SQL",
     ccod: "código criativo",
     ccodP:
-      "processing | processamento de imagens estáticas e em movimento através do design paramétrico e generativo",
+      "processing | edição de imagens através do design paramétrico e generativo",
+    //
+    //
     uiUx: "experiência do utilizador & interface do utilizador",
     desThink:
       "experiência do utilizador | design thinking | interface do utilizador | design visual | design systems | figma",

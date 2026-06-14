@@ -38,7 +38,7 @@
   }
   .mainSentence {
     font-size: 1.6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .myContactsAndNavigation {
     margin-bottom: 0;
@@ -58,13 +58,10 @@
 }
 /*  */
 /* MEDIA QUERIE - SCREENS */
-@media screen and (max-width: 840px) {
+@media (max-width: 840px) {
   .contentText-no-mb,
   .aboutMeTxt {
-    font-size: 1.3rem;
-  }
-  .aboutMeTitle {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   .btn,
@@ -105,7 +102,7 @@
   }
 }
 /*  */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .btnLang,
   .printPDFbtn,
   .btn {
@@ -130,19 +127,20 @@
   .primaryTitle {
     font-size: 1.5rem;
   }
-  .mainSentence,
-  .aboutMeTitle {
-    font-size: 1.7rem;
+  .mainSentence {
+    font-size: 1.6rem;
   }
   .onG {
     margin-left: 2rem;
   }
+  .outBr {
+    display: none;
+  }
 }
 /*  */
-@media screen and (max-width: 480px) {
-  .aboutMeTitle,
+@media (max-width: 480px) {
   .mainSentence {
-    font-size: 1.6rem;
+    font-size: 1.4em;
   }
   .onMobileNone,
   .mobileNone,
@@ -159,7 +157,7 @@
   }
 }
 /*  */
-@media screen and (max-width: 430px) {
+@media (max-width: 430px) {
   .miniMobileNone {
     display: none;
   }
@@ -172,7 +170,7 @@
   }
 }
 /*  */
-@media screen and (max-width: 330px) {
+@media (max-width: 330px) {
   .lastQueryNone {
     display: none;
   }

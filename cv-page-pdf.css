@@ -113,7 +113,7 @@ body {
 .mainSentence {
   font-size: 1.9rem;
   text-align: right;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 .structure2cols {
   display: grid;
@@ -215,6 +215,7 @@ footer {
   /* grid-template-columns: 1fr 1fr; */
   /* grid-template-columns: 2; */
 }
+.outBr,
 .mainSentenceMobile,
 .makeVisibleSkillsOnQuery,
 .makeVisibleTxtOnQuery {
