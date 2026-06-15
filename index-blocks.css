@@ -1,0 +1,273 @@
+@keyframes fadeInDescending {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(var(--fade-distance));
+    opacity: 1;
+  }
+}
+/*****************************************/
+/*****************************************/
+.blocksWrapper {
+  height: 58rem;
+  width: 20rem;
+  margin-left: auto;
+  /* border: 1px solid black; */
+}
+/* *********************************** */
+/* 16 lowcode cesae */
+.block16 {
+  height: 4rem;
+  width: 4rem;
+  background-color: rgba(0, 0, 255, 0.7);
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 30rem;
+  animation: fadeInDescending 0.25s ease forwards;
+}
+/* 15 creative coding esad */
+.block15 {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 10rem;
+  --fade-distance: 34rem;
+  animation: fadeInDescending 0.3s ease forwards;
+}
+/* */
+.block145 {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 10rem;
+  --fade-distance: 38rem;
+  animation: fadeInDescending 0.4s ease forwards;
+}
+/* 14 homestudy */
+.block14 {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 36rem;
+  animation: fadeInDescending 0.4s ease forwards;
+}
+/* 13 flag frontend */
+.block13 {
+  height: 4rem;
+  width: 8rem;
+  border: 3px solid #333;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 40rem;
+  animation: fadeInDescending 0.5s ease forwards;
+}
+/* 12 edit ux/ui */
+.block12 {
+  height: 4rem;
+  width: 8rem;
+  border: 2px solid blue;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 44rem;
+  animation: fadeInDescending 0.65s ease forwards;
+}
+/* 11 invisivel */
+.block11 {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 4rem;
+  --fade-distance: 48rem;
+  animation: fadeInDescending 0.7s ease forwards;
+}
+/* 10 spar */
+.block10 {
+  height: 8rem;
+  width: 4rem;
+  border: 4px solid #666;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 52rem;
+  animation: fadeInDescending 0.75s ease forwards;
+}
+/* 09 airbnb */
+.block09 {
+  height: 4rem;
+  width: 8rem;
+  border: 4px solid #333;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 60rem;
+  animation: fadeInDescending 1s ease forwards;
+}
+/* 08 invisivel */
+.block08 {
+  height: 2rem;
+  width: 2rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 64rem;
+  animation: fadeInDescending 1.1s ease forwards;
+}
+/* 07 spar part-time */
+.block07 {
+  height: 2rem;
+  width: 2rem;
+  border: 3px solid #999;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 13rem;
+  --fade-distance: 66rem;
+  animation: fadeInDescending 1.15s ease forwards;
+}
+/* 06 rest - 2/2 */
+.block06 {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid #333;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 68rem;
+  animation: fadeInDescending 1.2s ease forwards;
+}
+/* 05 estf - 2/2 */
+.block05 {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid #333;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 10rem;
+  --fade-distance: 70rem;
+  animation: fadeInDescending 1.25s ease forwards;
+}
+/* 04 jw-dd */
+.block04 {
+  height: 4rem;
+  width: 4rem;
+  border: 2px solid #222;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 72rem;
+  animation: fadeInDescending 1.5s ease forwards;
+}
+/* 03 jw-ant */
+.block03 {
+  height: 4rem;
+  width: 8rem;
+  border: 4px solid #999;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 76rem;
+  animation: fadeInDescending 1.75s ease forwards;
+}
+/* 02_uc-jewelry */
+.block02 {
+  height: 4rem;
+  width: 4rem;
+  border: 3px solid #666;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin-left: 8rem;
+  --fade-distance: 80rem;
+  animation: fadeInDescending 2s ease forwards;
+}
+/* 01_architecture */
+.block01 {
+  height: 4rem;
+  width: 12rem;
+  border: 4px solid #333;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: 0;
+  --fade-distance: 84rem;
+  animation: fadeInDescending 2.25s ease forwards;
+}
+.blockLetters {
+  font-size: 1.2rem;
+  margin-left: 2px;
+  margin-top: 2px;
+}
+/* ***************** */
+.blockLettersCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bigBlocks {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 2rem;
+}
+.b01 {
+  border: 2px solid #999;
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+}
+.b02 {
+  border: 6px solid #666;
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+}
+.b03 {
+  /* border: 4px solid #333; */
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+  /* box-shadow: -8px 8px red; */
+}
+.btnShowApi {
+  height: fit-content;
+  width: fit-content;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  border-radius: 1rem;
+  border: none;
+  background-color: white;
+  color: #111;
+  cursor: pointer;
+}
+.btnShowApi:hover {
+  background-color: orangered;
+  color: white;
+}
+img {
+  position: absolute;
+  top: 0;
+  margin-left: 12rem;
+  --fade-distance: 38rem;
+  animation: fadeInDescending 2.25s ease forwards;
+}

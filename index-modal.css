@@ -1,0 +1,157 @@
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-box {
+  position: absolute;
+  background: #fff;
+  width: 76rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  border: 3px solid blue;
+}
+
+/* header fixo */
+/* .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 2px solid #eee;
+  flex-shrink: 0;
+}
+
+.modal-header h2 {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+} */
+
+.close-modal {
+  height: 2rem;
+  width: 2rem;
+  background: none;
+  border: 1px solid blue;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+}
+
+/* corpo com scroll */
+.modal-body {
+  padding: 2rem;
+  overflow-y: auto;
+  flex: 1;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* footer fixo */
+/* .modal-footer {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  border-top: 2px solid #eee;
+  flex-shrink: 0;
+} */
+/* *** CURRENCY CONVERTER - cC API *** */
+#jokesWrapper,
+#cCmain {
+  width: 40rem;
+  height: fit-content;
+  border: 1px solid #333;
+  border-radius: 2rem;
+  margin: 2rem auto 2rem auto;
+  /* shadow */
+  /* background-color */
+}
+#cCtitle {
+  font-size: 1.8rem;
+  text-align: center;
+  margin: 1rem 1rem;
+}
+#cCwrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cCbox {
+  width: 8rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
+  /* border: 1px solid red; */
+  margin-bottom: 2rem;
+}
+select,
+output,
+input {
+  height: 2rem;
+  width: 8rem;
+  border: 1px solid grey;
+}
+
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} */
+
+/* .cCbox output {
+  height: 1.5rem;
+  border: 1px solid #999;
+} */
+/* *** JOKES API *** */
+/* #jokesWrapper {
+  width: 36rem;
+  max-height: 36rem;
+  border: 1px solid #333;
+  border-radius: 5rem;
+  margin: 2rem auto 2rem auto;
+} */
+/* BTN */
+#getJoke {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto 2rem auto;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  background-color: #666;
+  color: white;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#getJoke:hover {
+  background-color: white;
+  color: #666;
+}
+#jokesData {
+  max-height: 36rem;
+}
+#jokeList {
+  text-decoration: none;
+}
+
+#jokeList li {
+  font-size: 1.2rem;
+  margin: 0 2rem 0 2rem;
+  list-style-type: none;
+}
