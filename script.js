@@ -1,6 +1,7 @@
 const translation = {
   en: {
     mainSentence: "Hi, I'm looking forward to be a web developer",
+    fpct: "wbt_ work based training",
     edu: "education",
     devOut: "low code developer_ outsystems",
     onG: "< on going >",
@@ -29,6 +30,7 @@ const translation = {
     pres: "present - 2012",
     jewAC: "jewelry maker in António Castro, Gondomar",
     archJFG: "arquitect in José Fernando Gonçalves atelier, Porto",
+    arch: "architect",
     jewDes: "jewelry design<",
     archTitle: "architecture",
     meTitle: "about me",
@@ -43,9 +45,18 @@ const translation = {
     lanE: "english",
     othDigSk: "other digital skills ",
     madeBy: "using html5, css3,responsive: media querie to pdf, javascript",
+    // dates
+
+    febApr: "feb. 2026 - apr. 2026",
+    decJun: "dec. 2022 - jun. 2023",
+    apr: "apr. 2026  - ",
+    febMar: "feb. 2022 - mar. 2023",
+    janFeb: "jan. 2018 - feb. 2020",
+    present: "present - 2012",
   },
   pt: {
     mainSentence: "Olá, procuro uma oportunidade como desenvolvedora web!",
+    fpct: "fpct_ formação prática em contexto de trabalho",
     edu: "educação",
     devOut: "desenvolvedor de low code_ outsystems",
     onG: "< a decorrer >",
@@ -74,6 +85,7 @@ const translation = {
     jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
     pres: "presente - 2012",
     jewAC: "aprendiz de joalharia, António Castro, Gondomar",
+    arch: "arquiteta",
     archJFG: "arquiteta, José Fernando Gonçalves atelier, Porto",
     jewDes: "design de joalharia",
     archTitle: "arquitetura",
@@ -89,6 +101,14 @@ const translation = {
     othDigSk: "outras competências digitais",
     madeBy:
       "feito com: html5, css3, (responsivo: media querie to pdf), javascript",
+    // dates
+
+    febApr: "fev. 2026 - abr. 2026",
+    decJun: "dez. 2022 - jun. 2023",
+    apr: "abr. 2026  - ",
+    febMar: "fev. 2022 - mar. 2023",
+    janFeb: "jan. 2018 - fev. 2020",
+    present: "present - 2012",
   },
 };
 

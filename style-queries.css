@@ -8,45 +8,10 @@
     margin: 0;
     width: 100%;
   }
-
-  .myName {
-    font-size: 2rem;
-  }
-  .aboutMeTitle,
-  .primaryTitle,
-  .secondaryTitle {
-    font-size: 1.5rem;
-  }
-  .themeTitle {
-    font-weight: 700;
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-  }
-  .contentText,
-  .secondaryTitle span {
-    font-size: 1.3rem;
-  }
-  /* onGoing */
-  .onG,
-  .addContentDate {
-    font-size: 1.2rem;
-  }
-  /* margin-bottom 0.5rem */
-  .m-b05,
-  .contentText {
-    margin-bottom: 0.3rem;
-  }
-  .mainSentence {
-    font-size: 1.6rem;
-    margin-bottom: 2rem;
-  }
   .myContactsAndNavigation {
     margin-bottom: 0;
   }
-  /* all btn + nav links */
-  .pdfBtnContainer {
-    margin-bottom: 0;
-  }
+  .prtf,
   a,
   .btnLang,
   .printPDFbtn,
@@ -58,25 +23,25 @@
 }
 /*  */
 /* MEDIA QUERIE - SCREENS */
-@media screen and (max-width: 840px) {
+/* @media screen and (max-width: 840px) {
   .contentText-no-mb,
   .aboutMeTxt {
     font-size: 1.3rem;
   }
   .aboutMeTitle {
     font-size: 1.8rem;
-  }
+  } */
 
-  .btn,
+/* .btn,
   .btnLang,
   .printPDFbtn,
   .invisibleGridOnQuery,
   .invisibleColumnOnQuery {
     display: none;
-  }
+  } */
+/* .structure2cols,
   .makeVisibleSkillsOnQuery,
-  .makeVisibleTxtOnQuery,
-  .structure2cols {
+  .makeVisibleTxtOnQuery {
     display: block;
   }
   .linksSmallContainer,
@@ -102,10 +67,10 @@
   .myContactsAndNavigation {
     height: 2rem;
   }
-}
+} */
 /*  */
 @media screen and (max-width: 600px) {
-  .btnLang,
+  /* .btnLang,
   .printPDFbtn,
   .btn {
     height: 3rem;
@@ -113,35 +78,45 @@
     font-size: 1.2rem;
     font-weight: 500;
     border: 1px solid #333;
+  } */
+  /* *** */
+  .aboutMeTitle,
+  .mainSentence {
+    font-size: 1.6rem;
   }
-  .contentText-no-mb,
-  .contentText {
+  .aboutMeTxt {
     font-size: 1.2rem;
   }
-  .onG,
-  .addContentDate {
-    font-size: 1.1rem;
-  }
-  .themeTitle,
-  .secondaryTitle {
-    font-size: 1.3rem;
-  }
-  .primaryTitle {
+  .mainTitle {
     font-size: 1.5rem;
   }
-  .mainSentence,
-  .aboutMeTitle {
-    font-size: 1.7rem;
+  .subTitle {
+    font-size: 1.3rem;
   }
+  .regularTitle {
+    font-size: 1.1rem;
+  }
+  /* .contentText {
+    font-size: 1.2rem;
+  } */
+  /* *** */
   .onG {
+    font-size: 1.1rem;
     margin-left: 2rem;
   }
+  /* .themeTitle,
+  .secondaryTitle {
+    font-size: 1.3rem;
+  } */
+  /* .primaryTitle {
+    font-size: 1.5rem;
+  } */
 }
 /*  */
 @media screen and (max-width: 480px) {
   .aboutMeTitle,
   .mainSentence {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .onMobileNone,
   .mobileNone,

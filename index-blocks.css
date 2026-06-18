@@ -21,7 +21,7 @@
 .block16 {
   height: 4rem;
   width: 4rem;
-  background-color: rgba(0, 0, 255, 0.7);
+  background-color: #212974;
   border-radius: 0.5rem;
   position: absolute;
   top: 0;
@@ -81,7 +81,7 @@
 .block12 {
   height: 4rem;
   width: 8rem;
-  border: 2px solid blue;
+  border: 2px solid #212974;
   border-radius: 0.5rem;
   position: absolute;
   top: 0;
@@ -261,7 +261,10 @@
   cursor: pointer;
 }
 .btnShowApi:hover {
-  background-color: orangered;
+  background-color: #f55b00;
+  color: white;
+}
+.btnShowApi a:hover {
   color: white;
 }
 img {

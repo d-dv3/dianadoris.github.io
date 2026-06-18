@@ -16,13 +16,15 @@
 
 .modal-box {
   position: absolute;
+  top: 0;
+  margin-top: 8rem;
   background: #fff;
   width: 76rem;
   border-radius: 1.5rem;
   overflow: hidden;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 5;
-  border: 3px solid blue;
+  border: 3px solid #212974;
 }
 
 /* header fixo */
@@ -45,7 +47,7 @@
   height: 2rem;
   width: 2rem;
   background: none;
-  border: 1px solid blue;
+  border: 1px solid #212974;
   font-size: 1.5rem;
   cursor: pointer;
   line-height: 1;
