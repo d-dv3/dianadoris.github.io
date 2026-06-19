@@ -1,7 +1,7 @@
 const translation = {
   en: {
     mainSentence: "Hi, I'm looking forward to be a web developer",
-    fpct: "wbt_ work based training",
+    fpct: "training internship",
     edu: "education",
     devOut: "low code developer_ outsystems",
     onG: "< on going >",

@@ -118,11 +118,26 @@
   .mainSentence {
     font-size: 1.4rem;
   }
+  .pdfBtnContainer {
+    margin-top: 3rem;
+  }
+  .printPDFbtn,
+  .btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .btn-p {
+    display: none;
+  }
+  .btnquery {
+    display: block;
+  }
   .onMobileNone,
   .mobileNone,
-  .btn,
-  .btnLang,
-  .printPDFbtn {
+  /* .btn, */
+  /* .btnLang, */
+  /* .printPDFbtn */ {
     display: none;
   }
   .myContactsAndNavigation {
