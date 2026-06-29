@@ -22,64 +22,18 @@
   }
 }
 /*  */
-/* MEDIA QUERIE - SCREENS */
-/* @media screen and (max-width: 840px) {
-  .contentText-no-mb,
-  .aboutMeTxt {
-    font-size: 1.3rem;
-  }
-  .aboutMeTitle {
-    font-size: 1.8rem;
-  } */
-
-/* .btn,
-  .btnLang,
-  .printPDFbtn,
-  .invisibleGridOnQuery,
-  .invisibleColumnOnQuery {
-    display: none;
-  } */
-/* .structure2cols,
-  .makeVisibleSkillsOnQuery,
-  .makeVisibleTxtOnQuery {
-    display: block;
-  }
-  .linksSmallContainer,
-  .linksSmall {
-    display: flex;
-    align-items: center;
-  }
-  .linksSmall {
-    height: 3rem;
-    width: fit-content;
-    text-decoration: none;
-    color: #666;
-    margin-right: 0.7rem;
-    font-size: 1.4rem;
-    font-weight: 700;
-    cursor: pointer;
-  }
-  .linksSmall:hover {
-    background-color: #666;
-    color: white;
-    transition: 0.3s ease;
-  }
-  .myContactsAndNavigation {
-    height: 2rem;
+/*  */
+/* @media screen and (max-width: 900px) {
+  .meJuniorWeb {
+    margin-left: -10%;
   }
 } */
-/*  */
+@media screen and (max-width: 700px) {
+  .meJuniorWeb {
+    display: none;
+  }
+}
 @media screen and (max-width: 600px) {
-  /* .btnLang,
-  .printPDFbtn,
-  .btn {
-    height: 3rem;
-    margin-right: 0.7rem;
-    font-size: 1.2rem;
-    font-weight: 500;
-    border: 1px solid #333;
-  } */
-  /* *** */
   .aboutMeTitle,
   .mainSentence {
     font-size: 1.6rem;
@@ -104,15 +58,17 @@
     font-size: 1.1rem;
     margin-left: 2rem;
   }
-  /* .themeTitle,
-  .secondaryTitle {
-    font-size: 1.3rem;
-  } */
-  /* .primaryTitle {
-    font-size: 1.5rem;
-  } */
 }
 /*  */
+@media screen and (max-width: 500px) {
+  aside {
+    display: none;
+  }
+  .bigBlocksContainer {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
 @media screen and (max-width: 480px) {
   .aboutMeTitle,
   .mainSentence {

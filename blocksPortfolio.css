@@ -1,0 +1,113 @@
+.mainContent {
+  width: 100%;
+  /* border: 1px solid black; */
+}
+/* .allBlocksContainer {
+  border: 1px solid red;
+} */
+/* .bigBlocksContainer {
+  border: 1px solid green;
+} */
+.bigBlocks {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 2rem;
+}
+.blockLettersCentered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.b01 {
+  border: 2px solid #999;
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+  margin-bottom: 4rem;
+}
+
+.b02 {
+  border: 6px solid #666;
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+  margin-bottom: 4rem;
+}
+.b03 {
+  border: 3px solid #666;
+  box-shadow: -8px 8px rgba(126, 126, 126, 0.1);
+}
+.block-image {
+  margin-left: 40%;
+}
+.meJuniorWeb {
+  position: absolute;
+  top: 0;
+  /* margin-left: 12rem; */
+  --fade-distance: 38rem;
+  animation: fadeInDescending 2.25s ease forwards;
+}
+.btnOpenModal {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  color: #212974;
+}
+.btnOpenModal:hover {
+  background-color: #212974;
+  color: #fff;
+}
+/* ***************************************** */
+/* ***************************************** */
+/* MODALS */
+.modalOverlay {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalOverlay.active {
+  display: flex;
+}
+.modalBox {
+  position: absolute;
+  top: 0;
+  margin-top: 8rem;
+  background: #fff;
+  width: 76rem;
+  /* width: 60%; */
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  border: 3px solid #212974;
+}
+.btnCloseModal {
+  height: 2rem;
+  width: 2rem;
+  background: none;
+  /* border: 1px solid #212974; */
+  border: none;
+  font-size: 1.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  margin: 1rem;
+}
+.btnCloseModal:hover {
+  background-color: #212974;
+  color: #fff;
+}
+.modalHeader nav {
+  display: flex;
+  justify-content: right;
+}
+
+/* ***************************************** */
+/* ***************************************** */
+/* APIs  ? */

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <!--  -->
+    <script src="api.js" defer></script>
+    <script src="modal.js" defer></script>
+    <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,13 +17,14 @@
     <!--  -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style-queries.css" />
-    <link rel="stylesheet" href="index-blocks.css" />
+    <link rel="stylesheet" href="descendingBlocks.css" />
+    <link rel="stylesheet" href="blocksPortfolio.css" />
     <link rel="stylesheet" href="index-modal.css" />
     <!--  -->
   </head>
 
   <body>
-    <div style="margin-bottom: 12rem">
+    <header style="margin-bottom: 12rem">
       <div class="myNameContainer">
         <p class="myName">diana sousa</p>
       </div>
@@ -35,143 +39,167 @@
       </div>
       <!--  -->
       <div class="pdfBtnContainer">
-        <a href="index.html" class="btn" >
-          <span class="btn-p">port<br>folio</span>
+        <a href="index.html" class="btn">
+          <span class="btn-p">port<br />folio</span>
           <span class="btnquery">prtf</span>
-      </a>
+        </a>
         <!--  -->
         <a href="cv.html" class="btn">cv</a>
         <!--  -->
-        <p style="font-size: 1.2rem; color: red">[ portfolio under construction ]</p>
+        <p style="font-size: 1.2rem; color: red">
+          [ portfolio under construction ]
+        </p>
         <!-- <button class="btnLang"><p>PT /<br>EN</p></a></button> -->
       </div>
       <!--  -->
-    </div>
-
-    <div class="structure2cols" >
-      <!-- ESQUERDA 5FR (/ 3fr)-->
-      <!-- MAIN 1 COL -->
-      <main class="main-1col" >
+    </header>
+    <!--  -->
+    <main class="mainContent">
+      <div class="allBlocksContainer">
         <!--  -->
-        <div>
-          <div>
-            <!--  -->
-            <div style="display: flex;">
-              <!--  -->
-              <div>
-                <div class="bigBlocks  blockLettersCentered b01" style="margin-right: 10rem; margin-bottom: 4rem;">
-                  <button class="show-modal btnShowApi"><a href="#" style="text-decoration: none;"><p style="font-size: 2rem;" >playing with APIs</p></a></button>
-                </div>
-                <!--  -->
-                <div class="bigBlocks b02" style="margin-bottom: 12rem;" ></div>
-              </div>
-              <!--  -->
-              <div> 
-                <div class="bigBlocks" style="margin-bottom: 18rem; border: white;" >
-                  <img src="juniorWeb.png">
-                </div>
-
-                <div class="bigBlocks b03" style="margin-bottom: 20rem;margin-left: 12rem;">3</div>
-              </div>  
-              <!--  -->
-            </div>
-
-            <!--  -->
-            <!--  -->
+        <div class="bigBlocksContainer">
+          <!-- BIG BLOCKS -->
+          <!--  -->
+          <!-- BIG BLOCK I -->
+          <div class="bigBlocks blockLettersCentered b01">
+            <button class="btnOpenModal" data-target="modal1">
+              playing with APIs
+            </button>
+          </div>
+          <!-- BIG BLOCK II -->
+          <div
+            class="bigBlocks blockLettersCentered b02"
+            style="margin-bottom: 4rem"
+          >
+            <button class="btnOpenModal" data-target="modal2">II</button>
+          </div>
+          <!-- BIG BLOCK III -->
+          <div class="bigBlocks b03 blockLettersCentered">
+            <button class="btnOpenModal" data-target="modal3">III</button>
+          </div>
+          <!--  -->
+          <!-- BIG BLOCKS IMAGE -->
+          <div class="bigBlocks block-image">
+            <img class="meJuniorWeb" src="juniorWeb.png" />
           </div>
         </div>
-        <footer style="margin-bottom: 4rem;"><p>diana doris_ &nbsp <span  class="madeBy" data-i18n="madeBy" >using: &nbsp </span>html5, css3, (responsive: media querie to pdf), javascript</p></footer>
-        <!-- .MODULAR CONTENT -->
-      </main>
+        <!--  -->
+        <!--  -->
+      </div>
       <!--  -->
-      <!--  -->
+      <!-- POSITION ABSOLUTE ELEMENTS -->
       <!-- MODAL PROJECT I -->
-      <div class="modal-box hidden">
-        <div class="modal-header">
-          <nav style="display: flex; justify-self: right">
-            <button class="close-modal" style="border: none;margin: 1rem;font-size: 1.9rem;font-weight: 700;">&#x2715;</button>
-          </nav>
-        </div>
-        <div class="modal-body">
-          <p style="font-size: 2rem;text-align: center;">playing with APIs</p>
-
-          <main id="cCmain">
-            <!-- using API: "https://" -->
-            <!-- verifyed on POSTMAN -->
-            <!--  -->
-            <p id="cCtitle">currency converter</p>
-            <!--  -->
-            <div id="cCwrapper">
-              <!--  -->
-              <div class="cCbox">
-                <input type="" id="amountInput" value="1" min="1" />
+      <div class="modalOverlay" id="modal1">
+        <div class="modalBox">
+          <div class="modalHeader">
+            <nav>
+              <button class="btnCloseModal">&#x2715;</button>
+            </nav>
+          </div>
+          <div class="modal-body">
+            <p>playing with APIs</p>
+            <!-- API - CURRENCY CONVERTER -->
+            <div id="cCmain">
+              <p id="cCtitle">currency converter</p>
+              <div style="display: flex; justify-content: center">
+                <div class="cCbox">
+                  <input type="" id="amountInput" value="1" min="1" />
+                </div>
+                <div class="cCbox" style="margin-right: 2rem">
+                  <select id="fromCurrency">
+                    <option value="EUR">€ (EUR)</option>
+                    <option value="USD" selected>$ (USD)</option>
+                    <option value="GBP">£ (GBP)</option>
+                  </select>
+                </div>
+                <!--  -->
+                <div class="cCbox">
+                  <output id="resultOutput">0.00</output>
+                </div>
+                <div class="cCbox">
+                  <select id="toCurrency">
+                    <option value="EUR" selected>€ (EUR)</option>
+                    <option value="USD">$ (USD)</option>
+                    <option value="GBP">£ (GBP)</option>
+                  </select>
+                </div>
               </div>
-              <!--  -->
-              <div class="cCbox" style="margin-right: 2rem;">
-                <select id="fromCurrency">
-                  <option value="EUR">€ (EUR)</option>
-                  <option value="USD" selected>$ (USD)</option>
-                  <option value="GBP">£ (GBP)</option>
-                </select>
-              </div>
-              <!--  -->
-              <div class="cCbox">
-                <output id="resultOutput">0.00</output>
-              </div>
-              <!--  -->
-              <div class="cCbox">
-                <select id="toCurrency">
-                  <option value="EUR" selected>€ (EUR)</option>
-                  <option value="USD">$ (USD)</option>
-                  <option value="GBP">£ (GBP)</option>
-                </select>
-              </div>
-              <!--  -->
             </div>
-            <!--  -->
-          </main>
+            <!-- .currency converter body -->
+          </div>
+          <!--  -->
+
+          <!-- .API - CURRENCY CONVERTER -->
+          <!-- API - JOKES -->
           <div id="jokesWrapper">
             <button id="getJoke">how is that sense of humor?</button>
             <!-- ul-li - DOM element JS will later manipulate -->
             <div id="jokesData">
               <ul id="jokeList"></ul>
             </div>
-            
           </div>
-        <!-- <img
-          src="https://placehold.co/800x400"
-          alt="screenshot project I"
-          style="width: 100%; border-radius: 1rem; margin: 1.5rem 0"
-        /> -->
-          <p style="font-size: 1rem;">sources:<br>
-            currency converter API: "https://frankfurter.dev", "https://github.com/lineofflight/frankfurter"<br>
-            
-            jokes API: "https://official-joke-api.appspot.com/random_joke<br>
-
-            (all verifyed in POSTMAN before use)
-          </p>
+        </div>
+        <!-- .JOKES - API -->
+        <!-- APIS SOURCES -->
+        <p style="font-size: 1rem">
+          sources:<br />
+          currency converter API: "https://frankfurter.dev",
+          "https://github.com/lineofflight/frankfurter"<br />
+          jokes API: "https://official-joke-api.appspot.com/random_joke<br />
+          (all verifyed in POSTMAN before use)
+        </p>
       </div>
-    </div>
-    <div class="overlay hidden"></div>
+      <!-- .MODAL BODY -->
+      <!-- MODAL PROJECT II -->
+      <!-- MODAL PROJECT # high code -->
+      <div class="modalOverlay" id="modal2">
+        <div class="modalBox">
+          <div class="modalHeader">
+            <nav>
+              <button class="btnCloseModal">&#x2715;</button>
+            </nav>
+          </div>
+          <div class="modalBody">
+            <p>high code</p>
+          </div>
+          <div class="modalFooter">footer</div>
+          <!-- .MODAL BODY -->
+        </div>
+      </div>
+      <!-- .MODAL -->
+      <!-- MODAL PROJECT III -->
+      <!-- MODAL PROJECT # low code -->
+      <div class="modalOverlay" id="modal3">
+        <div class="modalBox">
+          <div class="modalHeader">
+            <nav>
+              <button class="btnCloseModal">&#x2715;</button>
+            </nav>
+          </div>
+          <div class="modalBody">
+            <p>low code</p>
+          </div>
+          <div class="modalFooter">footer</div>
+          <!-- .MODAL BODY -->
+        </div>
+      </div>
+      <!-- .MODAL III -->
+      <!--  -->
+    </main>
     <!--  -->
-    <!--  -->
-    <!-- modal window -->
+    <footer>
+      <p>
+        diana doris_ &nbsp
+        <span class="madeBy" data-i18n="madeBy">using: &nbsp </span>html5, css3,
+        (responsive: media querie to pdf), javascript
+      </p>
+    </footer>
 
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!--  -->
-    <!-- width 100% -->
-    <!-- <aside class="aside-1col-container"> -->
-    <!-- TITLE - FULL WIDTH width 75% -->
-    <!-- <div class="aside-1col"> -->
-
-    <div class="blocksWrapper">
+    <!-- BLOCKS --><!-- BLOCKS --><!-- BLOCKS --><!-- BLOCKS --><!-- BLOCKS -->
+    <aside class="blocksWrapper">
       <!-- cesae  -->
       <div class="block16 blockLettersCentered">
-        <p style="font-size: 1.4rem; color: white">low-<br>code</p>
+        <p style="font-size: 1.4rem; color: white">low-<br />code</p>
       </div>
       <!-- -->
       <div class="block15"></div>
@@ -181,11 +209,11 @@
       <div class="block145"></div>
       <!-- -->
       <div class="block13 blockLettersCentered">
-        <p style="font-size: 1.4rem;">outsystems</p>
+        <p style="font-size: 1.4rem">outsystems</p>
       </div>
       <!-- -->
       <div class="block12 blockLettersCentered">
-        <p style="font-size: 1.4rem;">javascript</p>
+        <p style="font-size: 1.4rem">javascript</p>
       </div>
       <!-- -->
       <div class="block11 blockLettersCentered">
@@ -193,11 +221,13 @@
       </div>
       <!-- -->
       <div class="block10 blockLettersCentered">
-        <p style="font-size: 1.4rem;line-height: 0.8">r<br>e<br>a<br>c<br>t</p>
+        <p style="font-size: 1.4rem; line-height: 0.8">
+          r<br />e<br />a<br />c<br />t
+        </p>
       </div>
       <!-- -->
       <div class="block09 blockLettersCentered">
-        <p style="font-size: 1.4rem;">html</p>
+        <p style="font-size: 1.4rem">html</p>
       </div>
       <!-- -->
       <div class="block08"></div>
@@ -209,22 +239,21 @@
       <div class="block05"></div>
       <!-- -->
       <div class="block04 blockLettersCentered">
-        <p style="font-size: 1.4rem;">sql</p>
+        <p style="font-size: 1.4rem">sql</p>
       </div>
       <!-- -->
       <div class="block03 blockLettersCentered">
-        <p style="font-size: 1.4rem;">figma | css </p>
+        <p style="font-size: 1.4rem">figma | css</p>
       </div>
       <!-- -->
       <div class="block02 blockLettersCentered">
-        <p style="font-size: 1.4rem;">ux/<br>ui</p>
+        <p style="font-size: 1.4rem">ux/<br />ui</p>
       </div>
       <!-- -->
-      <div
-        class="block01 blockLettersCentered">
-      <p style="font-size: 1.4rem;">design thinking</p>
+      <div class="block01 blockLettersCentered">
+        <p style="font-size: 1.4rem">design thinking</p>
       </div>
-    </div>
+    </aside>
 
     <!-- </div> -->
     <!-- </div> -->
@@ -233,7 +262,5 @@
           <p>diana doris_ <span style="font-size: 1rem;">made with:</span> </p>
           <p>HTML5, CSS3 | css animation - responsive - media querie &nbsp &nbsp &reg 2026</p>
           </footer> -->
-
-    <script src="modal.js" refer></script>
   </body>
 </html>
