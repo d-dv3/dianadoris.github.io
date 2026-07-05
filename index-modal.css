@@ -126,3 +126,16 @@ input::-webkit-inner-spin-button {
   margin: 0 2rem 0 2rem;
   list-style-type: none;
 }
+/* MODAL II */
+.modal-content video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+.modal-content {
+  height: auto; /* not a fixed px value */
+  max-height: 90vh;
+  overflow: auto; /* in case content still overflows */
+}

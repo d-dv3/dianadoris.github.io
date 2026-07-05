@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
     <!--  -->
+    <link rel="icon" type="image/x-icon" href="logoDd.svg" />
+    <!--  -->
     <script src="api.js" defer></script>
     <script src="modal.js" defer></script>
     <!--  -->
@@ -61,7 +63,10 @@
           <!-- BIG BLOCKS -->
           <!--  -->
           <!-- BIG BLOCK I -->
-          <div class="bigBlocks blockLettersCentered b01">
+          <div
+            class="bigBlocks blockLettersCentered b01"
+            style="margin-bottom: 4rem"
+          >
             <button class="btnOpenModal" data-target="modal1">
               playing with APIs
             </button>
@@ -71,11 +76,13 @@
             class="bigBlocks blockLettersCentered b02"
             style="margin-bottom: 4rem"
           >
-            <button class="btnOpenModal" data-target="modal2">II</button>
+            <button class="btnOpenModal" data-target="modal2">
+              outsytems_ search calendar
+            </button>
           </div>
           <!-- BIG BLOCK III -->
           <div class="bigBlocks b03 blockLettersCentered">
-            <button class="btnOpenModal" data-target="modal3">III</button>
+            <button class="btnOpenModal" data-target="modal3">#</button>
           </div>
           <!--  -->
           <!-- BIG BLOCKS IMAGE -->
@@ -138,29 +145,39 @@
               <ul id="jokeList"></ul>
             </div>
           </div>
+          <div>
+            <p style="font-size: 1rem">
+              sources:<br />
+              currency converter API: "https://frankfurter.dev",
+              "https://github.com/lineofflight/frankfurter"<br />
+              jokes API: "https://official-joke-api.appspot.com/random_joke<br />
+              (all verifyed in POSTMAN before use)
+            </p>
+          </div>
         </div>
         <!-- .JOKES - API -->
         <!-- APIS SOURCES -->
-        <p style="font-size: 1rem">
-          sources:<br />
-          currency converter API: "https://frankfurter.dev",
-          "https://github.com/lineofflight/frankfurter"<br />
-          jokes API: "https://official-joke-api.appspot.com/random_joke<br />
-          (all verifyed in POSTMAN before use)
-        </p>
       </div>
       <!-- .MODAL BODY -->
       <!-- MODAL PROJECT II -->
       <!-- MODAL PROJECT # high code -->
       <div class="modalOverlay" id="modal2">
         <div class="modalBox">
-          <div class="modalHeader">
+          <!-- <div class="modalHeader">
             <nav>
               <button class="btnCloseModal">&#x2715;</button>
             </nav>
-          </div>
-          <div class="modalBody">
-            <p>high code</p>
+          </div> -->
+          <!--  -->
+          <div class="videoModal" id="myVideoModal">
+            <div class="modal-content">
+              <span class="closeModalVideo">&times;</span>
+              <video controls width="100%" preload="metadata">
+                <source src="searchFilter - Cinema.mp4" type="video/mp4" />
+                Your browser doesn't support video playback.
+              </video>
+            </div>
+            <!-- <p>outsystems</p> -->
           </div>
           <div class="modalFooter">footer</div>
           <!-- .MODAL BODY -->

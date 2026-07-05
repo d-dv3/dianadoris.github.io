@@ -39,3 +39,19 @@ document.querySelectorAll(".modalOverlay").forEach((overlay) => {
     if (e.target === overlay) overlay.classList.remove("active");
   });
 });
+
+// MODAL VIDEO
+const modalVideo = document.getElementById("myVideoModal");
+const video = modalVideo.querySelector("video");
+const closeVideoModalBtn = modalVideo.querySelector(".closeModalVideo");
+
+function closeMv() {
+  modalVideo.style.display = "none";
+  video.pause();
+  video.currentTime = 0;
+}
+closeVideoModalBtn.addEventListener("click", closeMv);
+//
+window.addEventListener("click", (e) => {
+  if (e.target === modal) closeMv();
+});

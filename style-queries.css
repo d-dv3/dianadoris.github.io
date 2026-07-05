@@ -32,6 +32,9 @@
   .meJuniorWeb {
     display: none;
   }
+  .modalBox {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 600px) {
   .aboutMeTitle,
