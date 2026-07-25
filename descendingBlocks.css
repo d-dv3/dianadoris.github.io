@@ -21,7 +21,8 @@
 .block16 {
   height: 4rem;
   width: 4rem;
-  background-color: #212974;
+  /* background-color: #212974; */
+  border: 2px solid #666;
   border-radius: 0.5rem;
   position: absolute;
   top: 0;
