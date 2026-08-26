@@ -9,6 +9,16 @@
     <!--  -->
     <script src="api.js" defer></script>
     <script src="modal.js" defer></script>
+    <script src="slider.js" defer></script>
+    <!--  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"
+    ></script>
     <!--  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,7 +36,7 @@
   </head>
 
   <body>
-    <header style="margin-bottom: 12rem">
+    <header style="margin-bottom: 6rem">
       <div class="myNameContainer">
         <p class="myName">diana sousa</p>
       </div>
@@ -46,12 +56,7 @@
           <span class="btnquery">prtf</span>
         </a>
         <!--  -->
-        <a
-          href="cv.html"
-          class="btn"
-          style="font-size: 1.8rem; padding-top: 0.6rem"
-          >cv</a
-        >
+        <a href="cv.html" class="btnCV"><p>cv</p></a>
         <!--  -->
         <p style="font-size: 1.2rem; color: red">
           [ portfolio under construction ]
@@ -72,26 +77,45 @@
             class="bigBlocks blockLettersCentered b01"
             style="margin-bottom: 4rem"
           >
-            <button class="btnOpenModal" data-target="modal1">
-              high code_ playing with APIs
-            </button>
+            <div>
+              <button class="btnOpenModal" data-target="modal1">
+                <p>_ playing with APIs</p>
+              </button>
+            </div>
+            <div>
+              <p>#</p>
+            </div>
           </div>
           <!-- BIG BLOCK II -->
           <div
             class="bigBlocks blockLettersCentered b02"
             style="margin-bottom: 4rem"
           >
-            <button
-              class="btnOpenModal"
-              data-target="modal2"
-              style="font-size: 1.5rem"
-            >
-              low code_ outsystems<br />
-            </button>
+            <div>
+              <button class="btnOpenModal" data-target="modal2">
+                <p style="background-color: #e698c931">Power Apps</p>
+              </button>
+            </div>
+            <div style="margin-top: 1rem; margin-left: 1rem">
+              <p class="modalProjectName">My Supermarket App 🛒</p>
+              <p class="modalProjectDescription">Employee data using Form</p>
+              <p class="modalProjectDescription">
+                Uniform Orders using
+                <span>Power Automate</span>
+              </p>
+              <p class="modalProjectDescription">Sharepoint as database</p>
+            </div>
           </div>
           <!-- BIG BLOCK III -->
           <div class="bigBlocks b03 blockLettersCentered">
-            <button class="btnOpenModal" data-target="modal3">#</button>
+            <div>
+              <button class="btnOpenModal" data-target="modal3">
+                <p>Outsystems</p>
+              </button>
+            </div>
+            <div>
+              <p class="modalProjectName">Foco Cinema reopening 📽️</p>
+            </div>
           </div>
           <!--  -->
           <!-- BIG BLOCKS IMAGE -->
@@ -169,26 +193,97 @@
       </div>
       <!-- .MODAL BODY -->
       <!-- MODAL PROJECT II -->
-      <!-- MODAL PROJECT # high code -->
+      <!-- MODAL PROJECT # low code -->
       <div class="modalOverlay" id="modal2">
         <div class="modalBox">
-          <!-- <div class="modalHeader">
+          <div class="modalHeader">
             <nav>
               <button class="btnCloseModal">&#x2715;</button>
             </nav>
-          </div> -->
-          <!--  -->
-          <div class="videoModal" id="myVideoModal">
-            <div class="modal-content">
-              <span class="closeModalVideo">&times;</span>
-              <video controls width="100%" preload="metadata">
-                <source src="searchFilter - Cinema.mp4" type="video/mp4" />
-                Your browser doesn't support video playback.
-              </video>
-            </div>
-            <!-- <p>outsystems</p> -->
           </div>
-          <div class="modalFooter">footer</div>
+          <!--  -->
+          <section class="mySupermarket-slider">
+            <div class="placeholder">
+              <div class="slider">
+                <!--  -->
+                <div class="slide-01 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/00_ mySupermarketApp-home.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-02 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/01_ employeeWithData.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-03 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/02_ employeeOrders-formulas.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-04 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/03_ UniformOrderFLOW.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-05 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/04_ employeeOrder-formulas.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-06 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <img src="./img/05_ employeeOrderEmail.png" />
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-07 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <!-- <img src="#" /> -->
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="slide-08 slidersRow">
+                  <div class="phases-panel-slider">
+                    <div>
+                      <!-- <img src="#" /> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="sliderBtn">
+                <button class="chevron-left">
+                  <ion-icon name="chevron-back-circle-outline"></ion-icon>
+                </button>
+                <button class="chevron-right">
+                  <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+                </button>
+              </div>
+              <!--  -->
+            </div>
+          </section>
+          <!-- .SLIDER END -->
+          <!-- <div class="modalFooter" style="height: 60rem;">footer</div> -->
           <!-- .MODAL BODY -->
         </div>
       </div>
@@ -203,7 +298,18 @@
             </nav>
           </div>
           <div class="modalBody">
-            <p>low code</p>
+            <!-- VIDEO BEGINNING -->
+            <div class="videoModal" id="myVideoModal">
+              <div class="modal-content">
+                <span class="closeModalVideo">&times;</span>
+                <video controls width="100%" preload="metadata">
+                  <source src="searchFilter - Cinema.mp4" type="video/mp4" />
+                  Your browser doesn't support video playback.
+                </video>
+              </div>
+              <p>outsystems</p>
+            </div>
+            <!-- .VIDEO END -->
           </div>
           <div class="modalFooter">footer</div>
           <!-- .MODAL BODY -->
@@ -242,9 +348,9 @@
         <p style="font-size: 1.4rem">javascript</p>
       </div>
       <!-- -->
-      <div class="block11 blockLettersCentered">
+      <!-- <div class="block11 blockLettersCentered">
         <p style="font-size: 1.6rem">reskilling</p>
-      </div>
+      </div> -->
       <!-- -->
       <div class="block10 blockLettersCentered">
         <p style="font-size: 1.4rem; line-height: 0.8">

@@ -15,8 +15,10 @@
 }
 .blockLettersCentered {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  /* text-align: center; */
 }
 
 .b01,
@@ -28,8 +30,11 @@
   border: 2px solid #999;
 }
 .b02 {
-  border: 6px solid #666;
+  border: 6px solid #742774;
+  /* border: 12px solid #e698c9; */
+  background-color: #e698c931;
 }
+
 .b03 {
   border: 3px solid #666;
 }
@@ -48,10 +53,30 @@
   border: none;
   cursor: pointer;
   font-size: 1.7rem;
-  color: #212974;
+  color: #742774;
+}
+.btnOpenModal p {
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+.modalProjectName {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+.modalProjectDescription {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: #333;
+}
+.modalProjectDescription span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #742774;
 }
 .btnOpenModal:hover {
-  background-color: #212974;
+  background-color: #742774;
   color: #fff;
 }
 /* ***************************************** */
@@ -80,11 +105,15 @@
   background: #fff;
   /* width: 76rem; */
   width: 80%;
+  /*  */
+  max-height: 80vh; /* cap it so it never exceeds viewport */
+  overflow-y: auto;
+  /*  */
   border-radius: 1.5rem;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
   z-index: 5;
-  border: 3px solid #212974;
+  border: 3px solid #492773;
 }
 .btnCloseModal {
   height: 2rem;
@@ -100,7 +129,7 @@
   margin: 1rem;
 }
 .btnCloseModal:hover {
-  background-color: #212974;
+  background-color: #492773;
   color: #fff;
 }
 .modalHeader nav {

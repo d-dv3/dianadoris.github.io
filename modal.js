@@ -21,10 +21,39 @@
 // data target modal2
 // btnOpenModal
 
+// document.querySelectorAll(".btnOpenModal").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     const targetId = btn.dataset.target;
+//     document.getElementById(targetId).classList.add("active");
+//   });
+// });
+
+// document.querySelectorAll(".btnCloseModal").forEach((btn) => {
+//   btn.addEventListener("click", () => {
+//     btn.closest(".modalOverlay").classList.remove("active");
+//   });
+// });
+
+// document.querySelectorAll(".modalOverlay").forEach((overlay) => {
+//   overlay.addEventListener("click", (e) => {
+//     if (e.target === overlay) overlay.classList.remove("active");
+//   });
+// });
 document.querySelectorAll(".btnOpenModal").forEach((btn) => {
   btn.addEventListener("click", () => {
     const targetId = btn.dataset.target;
-    document.getElementById(targetId).classList.add("active");
+    const modal = document.getElementById(targetId);
+    modal.classList.add("active");
+
+    // --- slider recalculation, scoped to THIS modal ---
+    const slider = modal.querySelector(".slider");
+    const slides = modal.querySelectorAll(".slidersRow"); // ⚠ confirm this matches your HTML
+    if (slider && slides.length > 1) {
+      const slideWidth = slides[1].offsetLeft - slides[0].offsetLeft;
+      slider.style.transform = `translateX(0px)`;
+      slider.dataset.slideWidth = slideWidth; // stash it for the arrow buttons to read
+      slider.dataset.currentSlide = 0;
+    }
   });
 });
 
@@ -39,7 +68,6 @@ document.querySelectorAll(".modalOverlay").forEach((overlay) => {
     if (e.target === overlay) overlay.classList.remove("active");
   });
 });
-
 // MODAL VIDEO
 const modalVideo = document.getElementById("myVideoModal");
 const video = modalVideo.querySelector("video");

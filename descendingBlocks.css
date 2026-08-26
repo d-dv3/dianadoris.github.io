@@ -17,7 +17,7 @@
   /* border: 1px solid black; */
 }
 /* *********************************** */
-/* 16 lowcode */
+/* 16 */
 .block16 {
   height: 4rem;
   width: 4rem;
@@ -82,7 +82,7 @@
 .block12 {
   height: 4rem;
   width: 8rem;
-  border: 2px solid #212974;
+  border: 2px solid #492773;
   border-radius: 0.5rem;
   position: absolute;
   top: 0;

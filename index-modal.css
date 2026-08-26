@@ -139,3 +139,72 @@ input::-webkit-inner-spin-button {
   max-height: 90vh;
   overflow: auto; /* in case content still overflows */
 }
+/* *************************************** */
+/* SLIDER */
+.mySupermarket-slider {
+  display: flex;
+  /* margin-bottom: 8.8rem; */
+}
+
+.placeholder {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.slidersRow {
+  flex: 0 0 auto;
+  /* fixed slide width */
+  width: fit-content;
+  /* height: fit-content; */
+  box-sizing: border-box;
+  /* margin: 1rem; */
+}
+
+.phases-panel-slider {
+  height: fit-content;
+  /* width: 32rem; */
+  /* width: 62rem; */
+  border-radius: 1.6rem;
+  /* padding: 0.8rem; */
+  /* font-size: 1rem; */
+  /* font-weight: 300; */
+  background-color: rgba(201, 200, 216, 0.1);
+  /* margin-right: 1.6rem; */
+}
+.phases-panel-slider img {
+  max-width: 150%;
+  max-height: 75rem; /* pick a height that fits your slide */
+  width: auto;
+  height: auto;
+  object-fit: contain; /* scales whole image down, keeps aspect ratio, nothing cropped */
+  display: block;
+  margin: 0 auto;
+}
+.sliderBtn {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  pointer-events: none;
+}
+
+.chevron-left,
+.chevron-right {
+  color: #492773;
+  /* font-size: 3rem; */
+  font-size: 4rem;
+  background: none;
+  border: none;
+  pointer-events: all;
+  cursor: pointer;
+}
+/* *************************************** */
