@@ -1,7 +1,12 @@
 const translation = {
   en: {
-    mainSentence: "Hi, I'm looking forward to be a web developer",
+    mainSentence: "Hi, I'm a trainee web developer",
+    checkOut: "check out my website <b>dianadoris.com</b>",
     fpct: "training internship",
+    fpct01:
+      "power apps application to automating the procedures for ordering safety equipment, within the Safety, Environment and Quality (QAS) team context",
+    fpct02:
+      "power apps aplication for collecting data from different teams, within the Kaizen (continuous improvement) team context",
     edu: "education",
     devOut: "low code developer_ outsystems",
     onG: "< on going >",
@@ -31,10 +36,10 @@ const translation = {
     jewAC: "jewelry maker in António Castro, Gondomar",
     archJFG: "arquitect in José Fernando Gonçalves atelier, Porto",
     arch: "architect",
-    jewDes: "jewelry design<",
+    jewDes: "jewelry design",
     archTitle: "architecture",
     meTitle: "about me",
-    meTxt01: "I'm a former architect on my way to digital reskilling.",
+    meTxt01: "Making my way in digital retraining.",
     meTxt02:
       "I consider myself a creative person with a strong sense of responsability.",
     meTxt03:
@@ -55,8 +60,13 @@ const translation = {
     present: "present - 2012",
   },
   pt: {
-    mainSentence: "Olá, procuro uma oportunidade como desenvolvedora web!",
+    mainSentence: "Olá, sou uma desenvolvedora web estagiária!",
+    checkOut: "espreita o meu website em <b>dianadoris.com</b>",
     fpct: "fpct_ formação prática em contexto de trabalho",
+    fpct01:
+      "aplicação em Power Apps para automatizar os procedimentos de pedido de equipamentos de segurança, no contexto da equipa de Segurança, Ambiente e Qualidade (QAS)",
+    fpct02:
+      "aplicação em Power Apps para coletar dados de diferentes equipas, dentro do contexto da equipa Kaizen (melhoria contínua).",
     edu: "educação",
     devOut: "desenvolvedor de low code_ outsystems",
     onG: "< a decorrer >",
@@ -90,7 +100,7 @@ const translation = {
     jewDes: "design de joalharia",
     archTitle: "arquitetura",
     meTitle: "sobre mim",
-    meTxt01: "Sou arquiteta de formação, a caminho da requalificação digital.",
+    meTxt01: "Fazendo uma requalificação digital.",
     meTxt02: "Sou criativa, com um bom sentido de responsabilidade.",
     meTxt03: "Gosto do pensamento crítico e de trocar ideias com os outros.",
     meTxt04:
@@ -116,7 +126,7 @@ let currentLang = "en";
 
 function applyLang() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
-    el.innerText = translation[currentLang][el.dataset.i18n];
+    el.innerHTML = translation[currentLang][el.dataset.i18n];
   });
 }
 
@@ -126,19 +136,3 @@ document.querySelectorAll(".btnLang, .btnLangSmall").forEach((btn) => {
     applyLang();
   });
 });
-
-// document.querySelector(".btnLang").addEventListener("click", () => {
-//   currentLang = currentLang === "en" ? "pt" : "en";
-
-//   document.querySelectorAll("[data-i18n]").forEach((el) => {
-//     el.innerText = translation[currentLang][el.dataset.i18n];
-//   });
-// });
-
-// document.querySelector(".btnLangSmall").addEventListener("click", () => {
-//   currentLang = currentLang === "en" ? "pt" : "en";
-
-//   document.querySelectorAll("[data-i18n]").forEach((el) => {
-//     el.innerText = translation[currentLang][el.dataset.i18n];
-//   });
-// });
