@@ -63,7 +63,7 @@
   animation: fadeInDescending 2.25s ease forwards;
 }
 .btnOpenModal {
-  background-color: #fff;
+  /* background-color: #fff; */
   border: none;
   cursor: pointer;
   font-size: 1.7rem;
@@ -75,15 +75,26 @@
   font-size: 1.9rem;
   font-weight: 600;
 }
+.otherProjectsList a {
+  text-decoration: none;
+  color: #492773;
+  cursor: pointer;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
+.otherProjectsList a:hover {
+  background-color: #492773;
+  color: white;
+}
 .modalProjectName {
   font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   color: #333;
 }
 .modalProjectDescription {
   font-size: 1.3rem;
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
   color: #333;
 }
 .modalProjectDescription span {
@@ -92,7 +103,7 @@
   color: #742774;
 }
 .btnOpenModal:hover {
-  background-color: #742774;
+  background-color: #492773;
   color: #fff;
 }
 /* ***************************************** */
