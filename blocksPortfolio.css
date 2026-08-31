@@ -38,7 +38,11 @@
   background-color: #e698c931;
 }
 
-.b03,
+.b03 {
+  border: 6px solid #492773;
+  background-color: rgb(73, 39, 115, 0.1);
+}
+
 .b04,
 .b05 {
   border: 3px solid #666;
