@@ -1,0 +1,73 @@
+@media (max-width: 1400px) {
+  .fourthPrgph {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .thirdPrgph {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .secondPrgph {
+    display: none;
+  }
+}
+@media (max-width: 650px) {
+  .mainTitle {
+    font-size: 160px;
+  }
+  .subTitle {
+    font-size: 64px;
+  }
+  .markMessage {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 520px) {
+  .mainTitle {
+    font-size: 140px;
+  }
+  .subTitle {
+    font-size: 45px;
+  }
+  .markMessage {
+    font-size: 40px;
+  }
+  /*
+  .saveDate {
+    font-size: 24px;
+  }*/
+}
+
+@media (max-width: 440px) {
+  .mainTitle {
+    font-size: 100px;
+  }
+  .subTitle {
+    font-size: 40px;
+  }
+  .markMessage {
+    font-size: 32px;
+  }
+  .saveDate {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+  .mainTitle {
+    font-size: 96px;
+  }
+  .subTitle {
+    font-size: 32px;
+  }
+  .markMessage {
+    font-size: 24px;
+  }
+  /*
+  .saveDate {
+    font-size: 24px;
+  }*/
+}

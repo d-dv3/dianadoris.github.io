@@ -1,0 +1,269 @@
+/* ********************* */
+/* * BUY TICKETS STEP1 * */
+/* ********************* */
+.buyTicketStepsPage {
+  max-width: 1440px;
+  margin: 0 auto auto auto;
+  background-color: #6f001211;
+}
+.linksHeader {
+  height: 350px;
+  background-color: rgb(28, 131, 148, 0.3);
+}
+.buyStepsBox {
+  width: 100%;
+  border-bottom: 8px solid #1c8394;
+}
+.buyStep-1-header {
+  height: 56px;
+  padding: 0 48px 0 48px;
+  display: flex;
+  align-items: center;
+  font-family: afacad;
+  font-size: 32px;
+  background-color: #ef5b2b;
+}
+.buyStep1Wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stepTitle {
+  font-size: 16px;
+  color: white;
+}
+.step01,
+.step02,
+.step03 {
+  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.presentStep {
+  height: 32px;
+  width: 32px;
+  font-size: 18px;
+  background-color: white;
+  color: #ef5b2b;
+}
+.otherStep {
+  height: 24px;
+  width: 24px;
+  font-size: 16px;
+  border: 2px solid white;
+  color: white;
+}
+
+.mainMovieDetail {
+  height: 240px;
+  width: 100%;
+  padding: 4px 48px 4px 48px;
+  font-family: afacad;
+  display: grid;
+  grid-template-columns: 4fr 2fr 4fr 1fr;
+}
+.sessionDetails {
+  padding-right: 12px;
+}
+.sessionHourDet {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #222;
+}
+.w-600 {
+  font-weight: 600;
+}
+.synopsis {
+  font-size: 17px;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 12px;
+}
+
+/* ********************* */
+/* * BUY TICKETS STEP1 * */
+/* ********************* */
+.step1Form {
+  height: 240px;
+  width: 100%;
+  padding: 4px 48px 4px 48px;
+  font-family: afacad;
+  display: grid;
+  grid-template-columns: 2fr 4fr 2fr;
+}
+.buySessionInfo {
+  height: 240px;
+}
+.sTitle {
+  width: 100%;
+  padding-top: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+}
+.seatsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#gridSeatsContainer {
+  height: fit-content;
+  width: fit-content;
+  border: 1px solid white;
+}
+#gridSeats {
+  display: grid;
+  grid-template-rows: 9;
+  /* gap: 4px; */
+  border: 1px solid white;
+}
+.row {
+  display: flex;
+}
+#A01,
+#B01,
+#C01,
+#D01,
+#E01,
+#F01,
+#G01,
+#H01,
+#I01 {
+  margin-left: 4px;
+}
+#A21,
+#A22,
+#B21,
+#B22,
+#C21,
+#D21,
+#D22,
+#E21,
+#E22,
+#F21,
+#F22,
+#I16 {
+  margin-right: 8px;
+}
+#A02,
+#B02,
+#C02,
+#D02,
+#E02,
+#F02 {
+  margin-left: 8px;
+}
+.seatsLetter {
+  width: 18px;
+  color: #6f0013;
+  font-size: 12px;
+  text-align: center;
+}
+.seatsBtn {
+  height: 24px;
+  width: 20px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.seatsBtn p {
+  font-size: 10px;
+}
+.seatsBtn:hover {
+  background-color: #ef5b2b;
+}
+.seatsBtn:active {
+  background-color: #1c8394;
+}
+/*  */
+/*  */
+/*  */
+.buyTicketCalculator {
+  display: flex;
+}
+/*
+.b-t-calc-left,
+.b-t-calc-right {
+  width: 50%;
+}*/
+.calculateLeft {
+  height: 100%;
+  margin-left: 24px;
+}
+.qtyBox {
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.tktPrice,
+.qtyPlaceholder {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+.qty-un {
+  font-size: 20px;
+  margin-left: 8px;
+}
+
+.totalAmountBox {
+  height: 50%;
+}
+
+.calculateMiddle {
+  display: flex;
+  align-items: center;
+}
+/* .inc-dec-buttons-container {
+}
+.inc-dec-btns {
+}
+.inc-dec-btns {
+} */
+.qty {
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: 500;
+  border: none;
+  color: white;
+  background-color: #1c8394;
+}
+.qty:hover {
+  background-color: #6f0013;
+}
+.totalPriceBox {
+  height: 50%;
+}
+
+.previousPage {
+  display: flex;
+  align-items: center;
+}
+.previousPage ion-icon {
+  font-size: 48px;
+  color: #6f0013;
+}
+.b-t-calc-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-end;
+}
+.b-t-calc-right ion-icon {
+  font-size: 48px;
+  color: #6f0013;
+}

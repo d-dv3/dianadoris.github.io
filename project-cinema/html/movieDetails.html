@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/movieDet-BuyTck.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Bungee&family=Bungee+Inline&family=Bungee+Shade&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <div class="buyTicketStepsPage">
+      <!--  -->
+      <div class="linksHeader">
+        <div class="navigationLinks">
+          <a href=""
+            ><img
+              width="24px"
+              src="../img/logoDd.svg"
+              style="margin-right: 24px"
+          /></a>
+          <a href="../index.html"> <ion-icon name="home-outline"></ion-icon></a>
+          <a href="../html/homepage.html"
+            ><ion-icon name="chevron-back-outline"></ion-icon
+          ></a>
+          <a href="../html/buyTicketStep1.html"
+            ><ion-icon name="chevron-forward-outline"></ion-icon
+          ></a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="buyStepsBox">
+        <div class="buyStep-1-header">
+          <div class="buyStep1Wrapper">
+            <p class="stepTitle">step</p>
+            <div class="step01 presentStep">1</div>
+            <div class="step02 otherStep">2</div>
+            <div class="step03 otherStep">3</div>
+          </div>
+        </div>
+        <div class="mainMovieDetail">
+          <!-- COL-1 -->
+          <div>
+            <img width="160px" src="../img/parisTexas.png" />
+            <img width="160px" src="../img/parisTexas3.png" />
+            <img width="160px" src="../img/parisTexas4.png" />
+            <img width="160px" src="../img/parisTexas2.png" />
+          </div>
+          <!-- COL-2 -->
+          <div class="sessionDetails">
+            <p class="mTitle">Paris, Texas</p>
+            <p class="sessionHourDet">19h00</p>
+            <p class="mDuration"><span class="w-600">dur_</span> 2h25min</p>
+            <p class="mAuthors">
+              <span class="w-600">director: </span>Wim Wenders
+            </p>
+            <p class="mAuthors">
+              <span class="w-600">writers: </span>
+              L.M. Kit Carson, Sam Shepard, Walter Donohue
+            </p>
+            <p class="mAuthors">
+              <span class="w-600">stars:</span>
+              Harry Dean Stanton, Nastassja Kinsi, Dean Stockwell
+            </p>
+            <p class="mYear"><span class="w-600">year: </span> 1984</p>
+          </div>
+          <!-- COL-3 -->
+          <div class="synopsis">
+            <p class="w-600" style="margin-bottom: 10px">
+              Psychological Drama | Road Trip | Drama
+            </p>
+            <p>
+              Travis Henderson, an aimless drifter who has been missing forfour
+              years, wanders out of the desert and must reconnect with society,
+              himself, his life, and his family
+            </p>
+          </div>
+          <!-- COL-4 -->
+          <div class="buyTicketContainer">
+            <a class="buyTicket movieDetailsLink" href="buyTicketStep1.html">
+              <p>buy ticket<ion-icon name="ticket-outline"></ion-icon></p>
+            </a>
+          </div>
+          <!-- ----- -->
+        </div>
+      </div>
+    </div>
+    <footer style="max-width: 1440px; margin: 0 auto auto auto">
+      <p>cinema Foco | rua Afonso Lopes Vieira, Porto | cinemafoco@mail.com</p>
+    </footer>
+    <script>
+      const inc = document.querySelector("#increase");
+      const dec = document.querySelector("#decrease");
+      const displayQtd = document.querySelector(".qtyPlaceholder");
+      const displayPrice = document.querySelector(".tktPrice");
+      //
+      let qty = 1;
+      const minQty = 1;
+      const maxQty = 6;
+      const pricePerTicket = 7;
+
+      function updateTktPrice() {
+        displayQtd.textContent = qty;
+        displayPrice.textContent = qty * pricePerTicket;
+      }
+
+      inc.addEventListener("click", () => {
+        if (qty < maxQty) {
+          qty++;
+          updateTktPrice();
+        }
+      });
+
+      dec.addEventListener("click", () => {
+        if (qty > minQty) {
+          qty--;
+          updateTktPrice();
+        }
+      });
+
+      updateTktPrice();
+    </script>
+  </body>
+</html>

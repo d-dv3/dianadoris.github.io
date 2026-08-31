@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrap {
+  height: 778px;
+  max-width: 1440px;
+  margin: 0 auto auto auto;
+  display: flex;
+  background-image: url(../cinema-1-85-1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.cinemaMain {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.cinemaHeader {
+  width: 100%;
+}
+.mainTitle {
+  font-family: Bungee Inline;
+  font-size: 200px;
+  text-align: center;
+  text-shadow: -8px 8px rgba(255, 255, 255, 0.7);
+  color: #6f0013;
+}
+.subTitle {
+  font-family: afacad;
+  font-size: 80px;
+  text-align: center;
+  text-shadow: -4px 4px #000b0d;
+  color: #ef5b2b;
+  margin-bottom: 14rem;
+}
+.fullPageLink {
+  position: fixed;
+  inset: 0; /* inset (inserir) all around 0 */
+  z-index: 10;
+}
+.markMessage {
+  margin-bottom: 12px;
+  font-family: afacad;
+  font-size: 64px;
+  text-align: center;
+  text-shadow: -4px 4px #000b0d;
+  color: #1c8394;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.cinemaFooter {
+  width: 100%;
+  margin-top: auto;
+}
+/* CSS SLIDER */
+.marketingMessageContainer {
+  width: 100%;
+  overflow: hidden;
+  background-color: #6f0013;
+}
+.messageTrack {
+  display: flex;
+  width: 200vw; /* always wider than the screen */
+  animation: message 12s linear infinite;
+}
+.messageText {
+  white-space: nowrap;
+  font-family: afacad;
+  font-size: 20px;
+  color: white;
+  padding: 6px 0;
+  flex: 1; /* each span takes equal share of 200vw */
+}
+@keyframes message {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(-50%);
+  }
+}
+/* .CSS SLIDER */
+hr {
+  height: 4px;
+  border-color: #1c8394;
+  margin-bottom: 16px;
+  background-color: #1c8394;
+}
+/* ******************************** */
+/* *** HOMEPAGE *** */
+/* ******************************** */
+.buyTicketStepsPage {
+  max-width: 1440px;
+  margin: 0 auto auto auto;
+  background-color: #6f001211;
+}
+/*  */
+.openingProgramHeader {
+  /* height: fit-content; */
+  height: 350px;
+  align-items: center;
+  background-color: rgb(28, 131, 148, 0.3);
+}
+.openingProgramPage {
+  max-width: 1440px;
+  margin: 0 auto auto auto;
+}
+.navigationLinks {
+  position: absolute;
+  top: 10px;
+  margin-left: 48px;
+}
+.navigationLinks a {
+  color: #6f0013;
+  font-size: 32px;
+}
+.navigationLinks ion-icon {
+  font-size: 24px;
+}
+.homeLink {
+  font-family: Bungee Inline;
+  font-size: 88px;
+  text-align: center;
+  text-shadow: -8px 8px rgba(255, 255, 255, 0.7);
+  color: #6f0013;
+  text-decoration: none;
+}
+.subTitleProgramPage {
+  font-family: afacad;
+  font-size: 56px;
+  text-align: center;
+  text-shadow: -2px 2px rgb(0, 11, 13);
+  color: #ef5b2b;
+}
+.saveSpot {
+  font-family: afacad;
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 5rem 0 0.5rem 0;
+}
+.saveSpot p {
+  font-size: 28px;
+}
+.programBox {
+  width: 100%;
+  background-color: #6f001239;
+}
+.weekDay {
+  height: 56px;
+  padding-left: 48px;
+  font-family: afacad;
+  font-size: 32px;
+  background-color: #ef5b2b;
+}
+.allSessions {
+  padding: 0;
+}
+.session {
+  height: 120px;
+  width: 100%;
+  padding: 0 48px 0 48px;
+  font-family: afacad;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 3fr 3fr;
+}
+.b-b {
+  border-bottom: 0.5px solid #6f0013;
+}
+.sessionHour {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 8px;
+  color: #222;
+}
+.mImg {
+  width: 100%;
+  align-self: center;
+}
+.mTitle {
+  width: 100%;
+  padding-top: 8px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1;
+  color: #222;
+}
+.movieInfo {
+  padding-left: 8px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+.mDuration {
+  width: 100%;
+  margin-top: auto;
+}
+.buyTicketContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.buyTicket {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 160px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #6f0013;
+}
+.movieDetailsLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+}
+
+.movieDetailsLink:hover {
+  color: #1c8394;
+  background-color: transparent;
+}
+.movieDetailsLink p {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.buyTicket ion-icon {
+  font-size: 20px;
+  padding-left: 10px;
+}
+.buyTicket:hover,
+.movieDetailsLink:hover {
+  background-color: transparent;
+  border: 3px solid #1c8394;
+  color: #1c8394;
+}
+/*  */
+footer {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: rgb(28, 131, 148, 0.3);
+  border-top: 0.5px solid #6f0013;
+}
+footer p {
+  font-family: afacad;
+  font-size: 14px;
+  margin-left: 48px;
+}
