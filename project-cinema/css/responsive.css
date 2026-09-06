@@ -8,6 +8,21 @@
     display: none;
   }
 }
+/* project cinema homepage */
+@media (max-width: 800px) {
+  /*  */
+  .sessionHour {
+    font-size: 18px;
+  }
+  .mTitle {
+    font-size: 20px;
+  }
+  .mAuthors,
+  .mYear,
+  .mDuration {
+    font-size: 16px;
+  }
+}
 @media (max-width: 720px) {
   .secondPrgph {
     display: none;

@@ -87,7 +87,7 @@
 }
 
 /* ********************* */
-/* * BUY TICKETS STEP1 * */
+/* * BUY TICKETS STEP2 * */
 /* ********************* */
 .step1Form {
   height: 240px;
@@ -172,36 +172,48 @@
   background-color: white;
   border: 1px solid black;
 }
-
 .seatsBtn p {
   font-size: 10px;
 }
 .seatsBtn:hover {
   background-color: #ef5b2b;
 }
-.seatsBtn:active {
+.seatsBtn.selected {
   background-color: #1c8394;
 }
 /*  */
 /*  */
 /*  */
 .buyTicketCalculator {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
-/*
-.b-t-calc-left,
-.b-t-calc-right {
-  width: 50%;
-}*/
+.left2frContainer {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
 .calculateLeft {
   height: 100%;
-  margin-left: 24px;
+}
+#chosenSeatsList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .qtyBox {
-  height: 50%;
+  height: 100%;
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
+.ticketsNumber {
+  display: flex;
+}
+
 .tktPrice,
 .qtyPlaceholder {
   height: 32px;
@@ -212,25 +224,14 @@
   justify-content: center;
   background-color: white;
 }
+
 .qty-un {
   font-size: 20px;
-  margin-left: 8px;
 }
-
 .totalAmountBox {
   height: 50%;
 }
 
-.calculateMiddle {
-  display: flex;
-  align-items: center;
-}
-/* .inc-dec-buttons-container {
-}
-.inc-dec-btns {
-}
-.inc-dec-btns {
-} */
 .qty {
   height: 32px;
   width: 32px;
@@ -245,17 +246,28 @@
   background-color: #6f0013;
 }
 .totalPriceBox {
-  height: 50%;
+  height: 100%;
 }
-
-.previousPage {
+.right1frContainer {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.nextPayStep {
+  margin-left: auto;
+}
+.nextPayStep ion-icon {
+  font-size: 48px;
+  color: #6f0013;
+}
+/* .previousPage {
   display: flex;
   align-items: center;
 }
 .previousPage ion-icon {
   font-size: 48px;
   color: #6f0013;
-}
+} */
 .b-t-calc-right {
   width: 50%;
   display: flex;

@@ -28,6 +28,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+
+    <script src="../js/choseSeat.js" defer></script>
   </head>
   <body>
     <div class="buyTicketStepsPage">
@@ -69,8 +71,8 @@
             <p class="sTitle">Paris, Texas</p>
             <p class="sessionHour">19h00</p>
             <p class="sDuration">dur_ 2h25min</p>
-            <p>legendas em português</p>
-            <p>sem intervalo</p>
+            <p>portuguese subtitles</p>
+            <p>no break</p>
           </div>
           <!-- COL-2 -->
           <!-- all seats here -->
@@ -329,51 +331,46 @@
           </div>
           <!-- COL-3 -->
           <div class="buyTicketCalculator">
-            <div class="calculateLeft">
-              <!-- -->
-              <div class="qtyBox">
-                <div class="qtyPlaceholder" type="number">1</div>
-                <p class="qty-un">un</p>
-              </div>
-              <!-- -->
-              <div class="totalPriceBox">
-                <div class="qtyBox">
-                  <div class="tktPrice">7</div>
-                  <p style="font-size: 20px; margin-left: 4px">€</p>
-                  <p style="margin-left: 8px; font-size: 20px">total</p>
+            <!-- grid 2fr 1fr -->
+            <div class="left2frContainer">
+              <!-- 1row 1fr -->
+              <div class="calculateLeft">
+                <div>
+                  <p>pick your seats</p>
+                  <ul id="chosenSeatsList"></ul>
                 </div>
               </div>
-            </div>
-            <div class="calculateMiddle" style="width: 45%; height: 100%">
-              <div class="inc-dec-buttons-container"></div>
-              <button
-                class="inc-dec-btns qty"
-                id="decrease"
-                style="margin-right: 4px"
-              >
-                -
-              </button>
-              <button class="inc-dec-btns qty" id="increase">+</button>
-            </div>
+              <!-- 2row -->
+              <div class="qtyBox">
+                <div class="ticketsNumber">
+                  <div class="qtyPlaceholder" type="number">
+                    <p>1</p>
+                  </div>
+                  <div class="unitPlaceholder">
+                    <p class="qty-un">un</p>
+                  </div>
+                </div>
 
-            <div
-              class="bigDivRIGHT30"
-              style="
-                width: 30%;
-                height: 100%;
-                display: flex;
-                align-items: center;
-              "
-            >
-              <div style="margin-left: auto">
-                <a href="#"
-                  ><ion-icon
-                    name="arrow-forward-circle-outline"
-                    style="font-size: 48px; color: #6f0013"
-                  ></ion-icon
-                ></a>
+                <div class="totalPriceBox">
+                  <div class="qtyBox">
+                    <div class="tktPrice">7</div>
+                    <p style="font-size: 20px; margin-left: 4px">€</p>
+                    <p style="font-size: 20px">total</p>
+                  </div>
+                </div>
+              </div>
+              <!-- 3row -->
+
+            </div>
+            <!-- right container -->
+            <div class="right1frContainer">
+              <div class="nextPayStep">
+                <a href="#">
+                  <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </a>
               </div>
             </div>
+            <!--  -->
           </div>
           <!-- ----- -->
         </div>
@@ -382,37 +379,7 @@
     <footer style="max-width: 1440px; margin: 0 auto auto auto">
       <p>cinema Foco | rua Afonso Lopes Vieira, Porto | cinemafoco@mail.com</p>
     </footer>
-    <script>
-      const inc = document.querySelector("#increase");
-      const dec = document.querySelector("#decrease");
-      const displayQtd = document.querySelector(".qtyPlaceholder");
-      const displayPrice = document.querySelector(".tktPrice");
-      //
-      let qty = 1;
-      const minQty = 1;
-      const maxQty = 6;
-      const pricePerTicket = 7;
-
-      function updateTktPrice() {
-        displayQtd.textContent = qty;
-        displayPrice.textContent = qty * pricePerTicket;
-      }
-
-      inc.addEventListener("click", () => {
-        if (qty < maxQty) {
-          qty++;
-          updateTktPrice();
-        }
-      });
-
-      dec.addEventListener("click", () => {
-        if (qty > minQty) {
-          qty--;
-          updateTktPrice();
-        }
-      });
-
-      updateTktPrice();
-    </script>
+  </body>
+</html>
   </body>
 </html>
