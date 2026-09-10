@@ -3,12 +3,43 @@
     display: none;
   }
 }
+@media (max-width: 1050px) {
+  /* .buyTicketStepsPage {
+    display: none;
+  } */
+  .mainMovieDetailResponsive {
+    display: block !important;
+  }
+
+  .mainMovieDetail {
+    display: none !important;
+    visibility: hidden !important;
+  }
+}
 @media (max-width: 1000px) {
   .thirdPrgph {
     display: none;
   }
 }
-/* project cinema homepage */
+@media (max-width: 870px) {
+  .step1Form {
+    height: fit-content;
+  }
+  .row {
+    justify-self: center;
+  }
+  .buySessionInfo,
+  .buyTicketCalculator,
+  s .buySessionInfo {
+    display: none !important;
+    visibility: hidden !important;
+  }
+  .right1frContainerResponsive,
+  .buyTicketCalculatorResponsive,
+  .buySessionInfoResponsive {
+    display: block !important;
+  }
+}
 @media (max-width: 800px) {
   /*  */
   .sessionHour {
@@ -26,6 +57,10 @@
 @media (max-width: 720px) {
   .secondPrgph {
     display: none;
+  }
+  .mAuthors,
+  .sessionHour {
+    padding-left: 8px;
   }
 }
 @media (max-width: 650px) {

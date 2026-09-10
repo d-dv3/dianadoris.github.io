@@ -158,6 +158,12 @@ hr {
 .allSessions {
   padding: 0;
 }
+.sessionsResponsive {
+  /* display: none; */
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid blue;
+}
 .session {
   height: 120px;
   width: 100%;
@@ -183,7 +189,7 @@ hr {
 .mTitle {
   width: 100%;
   padding-top: 8px;
-  /* padding-left: 8px; */
+  padding-left: 8px;
   font-size: 22px;
   font-weight: 600;
   line-height: 1;

@@ -65,6 +65,35 @@
   display: grid;
   grid-template-columns: 4fr 2fr 4fr 1fr;
 }
+.mainMovieDetailResponsive {
+  height: fit-content;
+  display: none;
+}
+.movieDetailImgResponsive {
+  display: flex;
+  justify-content: center;
+}
+.sessionDetailsResponsive {
+  width: 370px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.synopsisResponsive {
+  font-size: 17px;
+  font-weight: 400;
+  width: 370px;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.buyTicketContainerResponsive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .movieDetailResponsive {
+  display: none;
+} */
 .sessionDetails {
   padding-right: 12px;
 }
@@ -278,4 +307,28 @@
 .b-t-calc-right ion-icon {
   font-size: 48px;
   color: #6f0013;
+}
+.right1frContainerResponsive,
+.buyTicketCalculatorResponsive {
+  display: none !important;
+}
+.buySessionInfoResponsive {
+  /* display: flex; */
+  /* justify-content: space-between; */
+  display: none !important;
+  visibility: hidden !important;
+}
+.buyTicketCalculatorResponsive {
+  width: 200px;
+  border: 2px solid blue;
+  margin-left: auto;
+  margin-right: auto;
+}
+.right1frContainerResponsive {
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.calculateLeftResponsive {
+  height: 50px;
 }

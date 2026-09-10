@@ -4,9 +4,9 @@ const translation = {
     checkOut: "check out my website <b>dianadoris.com</b>",
     fpct: "training internship",
     fpct01:
-      "power apps application to automating the procedures for ordering safety equipment, within the Safety, Environment and Quality (QAS) team context",
+      "application developed in Power Apps, made with sharepoint list's as database, and connected with Power Automate to automate the procedures for ordering safety equipment. Project carried out in the context of the Safety, Environment and Quality (QAS) team, which helped me understand the needs of each team. I also had the support of other colleagues - employees of the workshops (who will use the safety equipment) in order to survey the day-to-day needs",
     fpct02:
-      "power apps aplication for collecting data from different teams, within the Kaizen (continuous improvement) team context",
+      "Power Apps application for Kamishibai - one of the processes of the Kaizen (continuous improvement) methodology. It combines data from different company teams, aiming to correlate data with Power BI to monitor the results of all departments",
     edu: "education",
     devOut: "low code developer_ outsystems",
     onG: "< on going >",
@@ -64,9 +64,9 @@ const translation = {
     checkOut: "espreita o meu website em <b>dianadoris.com</b>",
     fpct: "fpct_ formação prática em contexto de trabalho",
     fpct01:
-      "aplicação em Power Apps para automatizar os procedimentos de pedido de equipamentos de segurança, no contexto da equipa de Segurança, Ambiente e Qualidade (QAS)",
+      "aplicação desenvolvida em Power Apps, utilizando Listas de Sharepoint como base de dados, conectada com o Power Automate para automatizar os procedimentos de pedido de equipamentos de segurança. Projeto realizado no contexto da equipa de Segurança, Meio Ambiente e Qualidade (QAS), que me ajudou a compreender as necessidades de cada equipa. Contei também com o apoio dos colegas - funcionários das oficinas (que utilizarão os equipamentos de segurança) para avaliar as necessidades do seu dia a dia",
     fpct02:
-      "aplicação em Power Apps para coletar dados de diferentes equipas, dentro do contexto da equipa Kaizen (melhoria contínua).",
+      "desenvolvimento de uma app em Power Apps para o Kamishibai - um dos processos da metodologia Kaizen (melhoria contínua). Combina os dados de diferentes equipas da empresa, com o objetivo de correlacioná-los com o Power BI para monitorizar os resultados de todos os departamentos",
     edu: "educação",
     devOut: "desenvolvedor de low code_ outsystems",
     onG: "< a decorrer >",
