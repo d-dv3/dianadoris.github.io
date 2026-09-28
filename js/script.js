@@ -33,6 +33,8 @@ const translation = {
     archJew: "architecture | jewelry Design",
     jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
     pres: "present - 2012",
+    JewFreelance:
+      " I created my own brand - 'Diana Dóris', designed its logo and packaging. I set up the environment and setting for the photoshoot of the first jewelry collection. I created a website for this collection where I narrated the storytelling and making-of of the 'Botânica' pieces.",
     jewAC: "jewelry maker in António Castro, Gondomar",
     archJFG: "arquitect in José Fernando Gonçalves atelier, Porto",
     arch: "architect",
@@ -51,7 +53,7 @@ const translation = {
     othDigSk: "other digital skills ",
     madeBy: "using html5, css3,responsive: media querie to pdf, javascript",
     // dates
-
+    sept: "jun. 2026 - sept. 2026",
     febApr: "feb. 2026 - apr. 2026",
     decJun: "dec. 2022 - jun. 2023",
     apr: "apr. 2026  - ",
@@ -94,6 +96,8 @@ const translation = {
     archJew: "arquitetura | design de joias",
     jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
     pres: "presente - 2012",
+    JewFreelance:
+      "Criei minha própria marca - 'Diana Dóris', desenhei seu logotipo e embalagem. Preparei o ambiente e o cenário para a sessão de fotos da primeira coleção. Criei um site para essa coleção, onde narrei a história e o processo de criação das peças 'Botânica'. ",
     jewAC: "aprendiz de joalharia, António Castro, Gondomar",
     arch: "arquiteta",
     archJFG: "arquiteta, José Fernando Gonçalves atelier, Porto",
@@ -101,6 +105,8 @@ const translation = {
     archTitle: "arquitetura",
     meTitle: "sobre mim",
     meTxt01: "Fazendo uma requalificação digital.",
+    meTxt01:
+      "Sou formada em Arquitetura e tenho vindo a atualizar os meus conhecimentos, nomeadamente na área das tecnologias.",
     meTxt02: "Sou criativa, com um bom sentido de responsabilidade.",
     meTxt03: "Gosto do pensamento crítico e de trocar ideias com os outros.",
     meTxt04:
@@ -112,7 +118,7 @@ const translation = {
     madeBy:
       "feito com: html5, css3, (responsivo: media querie to pdf), javascript",
     // dates
-
+    sept: "jun. 2026 - set. 2026",
     febApr: "fev. 2026 - abr. 2026",
     decJun: "dez. 2022 - jun. 2023",
     apr: "abr. 2026  - ",
