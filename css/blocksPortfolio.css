@@ -5,9 +5,9 @@
 /* .allBlocksContainer {
   border: 1px solid red;
 } */
-/* .bigBlocksContainer {
-  border: 1px solid green;
-} */
+.bigBlocksContainer {
+  position: relative;
+}
 .bigBlocks {
   height: 20rem;
   width: 20rem;
@@ -49,21 +49,15 @@
 }
 .block-image {
   position: absolute;
-  top: 0;
-  /* margin-left: 12rem; */
+  top: -12rem;
+  /* top: 0; */
   /* --fade-distance: 12rem;
   animation: fadeInDescending 2.25s ease forwards; */
-  /* margin-left: 40%; */
-  /* margin-left: 30%; */
-  /* margin-left: 48rem; */
   margin-left: 35%;
 }
 .meJuniorWeb {
   position: absolute;
   top: 0;
-  /* margin-left: 12rem; */
-  /* --fade-distance: 38rem; */
-  /* --fade-distance: 40rem; */
   --fade-distance: 30rem;
   animation: fadeInDescending 2.25s ease forwards;
 }
