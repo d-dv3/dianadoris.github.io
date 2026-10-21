@@ -67,8 +67,8 @@
           </div>
 
           <!-- COL-2 -->
-          <div class="allSessions sessionDetails">
-            <p class="mTitle">Paris, Texas</p>
+          <div class="allSessions" style="margin-right: 20px">
+            <p class="mTitle sessionDetails">Paris, Texas</p>
             <p class="sessionHourDet">19h00</p>
             <p class="mDuration"><span class="w-600">dur_</span> 2h25min</p>
             <p class="mAuthors">
@@ -162,40 +162,8 @@
     <!-- .responsive -->
     <!-- .responsive -->
     <!-- .responsive -->
-    <footer style="max-width: 1440px; margin: 0 auto auto auto">
+    <footer>
       <p>cinema Foco | rua Afonso Lopes Vieira, Porto | cinemafoco@mail.com</p>
     </footer>
-    <script>
-      const inc = document.querySelector("#increase");
-      const dec = document.querySelector("#decrease");
-      const displayQtd = document.querySelector(".qtyPlaceholder");
-      const displayPrice = document.querySelector(".tktPrice");
-      //
-      let qty = 1;
-      const minQty = 1;
-      const maxQty = 6;
-      const pricePerTicket = 7;
-
-      function updateTktPrice() {
-        displayQtd.textContent = qty;
-        displayPrice.textContent = qty * pricePerTicket;
-      }
-
-      inc.addEventListener("click", () => {
-        if (qty < maxQty) {
-          qty++;
-          updateTktPrice();
-        }
-      });
-
-      dec.addEventListener("click", () => {
-        if (qty > minQty) {
-          qty--;
-          updateTktPrice();
-        }
-      });
-
-      updateTktPrice();
-    </script>
   </body>
 </html>

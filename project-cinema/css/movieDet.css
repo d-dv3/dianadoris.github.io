@@ -1,11 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 /* ********************* */
 /* ********************* */
 .buyTicketStepsPage {
+  height: 1480px;
   max-width: 1440px;
   margin: 0 auto auto auto;
   background-color: #6f001211;
@@ -63,7 +59,8 @@
 }
 
 .mainMovieDetail {
-  height: 240px;
+  /* height: 240px; */
+  height: fit-content;
   width: 100%;
   padding: 4px 48px 4px 48px;
   font-family: afacad;
@@ -101,6 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-bottom: 16px;
 }
 /* .movieDetailResponsive {
   display: none;
@@ -143,29 +141,9 @@
   font-weight: 600;
   line-height: 1;
 }
-
-
-
-
 /*  */
 /*  */
 /*  */
-
-
-
-.qty-un {
-  font-size: 20px;
-}
-
-
-
-
-
-
-
-
-
-
 /* *************************************** */
 /* SLIDER */
 .mySupermarket-slider {

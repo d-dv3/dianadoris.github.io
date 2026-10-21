@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Buy Ticket</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/movieDet.css" />
@@ -64,7 +64,7 @@
           <!-- grid 2fr -->
           <div class="buySessionSlider">
           <!-- <div class="movieInfoSlider"> -->
-              <div class="buySessionInfo">
+              <div class="buySessionInfo" >
                 <p class="mTitle" >Paris, Texas</p>
                 <p class="sessionHour">19h00</p>
                 <p class="sDuration">dur_ 2h25min</p>
@@ -79,8 +79,8 @@
                 <div id="gridSeatsContainer">
                   <div id="gridSeats">
                     <!-- A -->
-                    <div class="row">
-                      <p class="seatsLetter">A</p>
+                    <div class="row" style="margin-top: 8px;">
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">A</p></div>
                       <button id="A01" class="seatsBtn"><p>01</p></button>
                       <button id="A03" class="seatsBtn"><p>03</p></button>
                       <button id="A05" class="seatsBtn"><p>05</p></button>
@@ -108,7 +108,7 @@
                     <!-- fim .A -->
                     <!-- B -->
                     <div class="row">
-                      <p class="seatsLetter">B</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">B</p></div>
                       <button id="B01" class="seatsBtn"><p>01</p></button>
                       <button id="B03" class="seatsBtn"><p>03</p></button>
                       <button id="B05" class="seatsBtn"><p>05</p></button>
@@ -136,7 +136,7 @@
                     <!-- fim .B -->
                     <!-- C -->
                     <div class="row">
-                      <p class="seatsLetter">C</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">C</p></div>
                       <button id="C01" class="seatsBtn"><p>01</p></button>
                       <button id="C03" class="seatsBtn"><p>03</p></button>
                       <button id="C05" class="seatsBtn"><p>05</p></button>
@@ -170,7 +170,7 @@
                     <!-- fim .C -->
                     <!-- D -->
                     <div class="row">
-                      <p class="seatsLetter">D</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">D</p></div>
                       <button id="D01" class="seatsBtn"><p>01</p></button>
                       <button id="D03" class="seatsBtn"><p>03</p></button>
                       <button id="D05" class="seatsBtn"><p>05</p></button>
@@ -198,7 +198,7 @@
                     <!-- fim .D -->
                     <!-- E -->
                     <div class="row">
-                      <p class="seatsLetter">E</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">E</p></div>
                       <button id="E01" class="seatsBtn"><p>01</p></button>
                       <button id="E03" class="seatsBtn"><p>03</p></button>
                       <button id="E05" class="seatsBtn"><p>05</p></button>
@@ -226,7 +226,7 @@
                     <!-- fim .E -->
                     <!-- F -->
                     <div class="row">
-                      <p class="seatsLetter">F</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">F</p></div>
                       <button id="F01" class="seatsBtn"><p>01</p></button>
                       <button id="F03" class="seatsBtn"><p>03</p></button>
                       <button id="F05" class="seatsBtn"><p>05</p></button>
@@ -254,7 +254,7 @@
                     <!-- fim .F -->
                     <!-- G -->
                     <div class="row">
-                      <p class="seatsLetter">G</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">G</p></div>
                       <button id="G01" class="seatsBtn"><p>01</p></button>
                       <button id="G03" class="seatsBtn"><p>03</p></button>
                       <button id="G05" class="seatsBtn"><p>05</p></button>
@@ -286,7 +286,7 @@
                     <!-- fim .G-->
                     <!-- H -->
                     <div class="row">
-                      <p class="seatsLetter">H</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">H</p></div>
                       <button id="H01" class="seatsBtn"><p>01</p></button>
                       <button id="H03" class="seatsBtn"><p>03</p></button>
                       <button id="H05" class="seatsBtn"><p>05</p></button>
@@ -316,7 +316,7 @@
                     <!-- fim .H -->
                     <!-- I (last) -->
                     <div class="row" style="margin-bottom: 8px">
-                      <p class="seatsLetter">I</p>
+                      <div class="seatsLetterPlaceholder"><p class="seatsLetter">I</p></div>
                       <button id="I01" class="seatsBtn"><p>01</p></button>
                       <button id="I03" class="seatsBtn"><p>03</p></button>
                       <button id="I05" class="seatsBtn"><p>05</p></button>
@@ -348,11 +348,11 @@
             <!--  -->
             <!-- grid 2fr -->
             <div class="buyTicketSlider" >
-              <div class="buyTicketCalculator" style="border: 2px solid black;">
+              <div class="buyTicketCalculator">
 
-                <div class="calculateLeft" >
+                <div class="calculateLeft">
                   <!-- 1 row -->
-                  <div>
+                  <div >
                     <p class="sessionDetails">pick your seats</p>
                     <ul id="chosenSeatsList"></ul>
                   </div>
@@ -363,19 +363,23 @@
                         <p>1</p>
                       </div>
                       <div class="unitPlaceholder">
-                        <p class="qty-un sessionDetails">un</p>
+                        <p class="sessionDetails">un</p>
                       </div>
                     </div>
                     <div class="totalPriceBox" >
-                      <div class="qtyBox">
-                        <div class="tktPrice sessionDetails">7</div>
-                        <p class="sessionDetails" style=" margin-left: 4px">€</p>
-                        <p class="sessionDetails">total</p>
+                      <div class="qtyPrice">
+                        <div class="tktPrice priceSize">7</div>
+                        <div>
+                          <p class="sessionDetails">€</p>
+                        </div>
                       </div>
+                    </div>
+                    <div>
+                      <p class="sessionDetails">total</p>
                     </div>
                   </div>
                   <!-- 3 row -->
-                  <div class="right1frContainer" >
+                  <div class="right1frContainer"  >
                     <div class="nextPayStep">
                       <a href="#">
                         <ion-icon

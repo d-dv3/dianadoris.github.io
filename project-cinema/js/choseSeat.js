@@ -45,4 +45,4 @@ function updateTktCalculator() {
   displayPrice.textContent = qty * pricePerTicket;
 }
 
-updateTktCalculator(); // reset om
+updateTktCalculator(); // reset
