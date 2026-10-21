@@ -10,7 +10,8 @@
   margin: 0 auto auto auto;
   background-color: #6f001211;
 }
-.linksHeader {
+.linksHeaderMovieDetail {
+  /* height: 350px; */
   height: 350px;
   background-color: rgb(28, 131, 148, 0.3);
 }
@@ -142,236 +143,28 @@
   font-weight: 600;
   line-height: 1;
 }
-.seatsContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#gridSeatsContainer {
-  height: fit-content;
-  width: fit-content;
-  border: 1px solid white;
-}
-#gridSeats {
-  display: grid;
-  grid-template-rows: repeat(9, auto);
-  /* gap: 4px; */
-  border: 1px solid white;
-}
-.row {
-  display: flex;
-}
 
-.seatsLetter {
-  width: 18px;
-  color: #6f0013;
-  font-size: 12px;
-  text-align: center;
-}
 
-#A01,
-#B01,
-#C01,
-#D01,
-#E01,
-#F01,
-#G01,
-#H01,
-#I01 {
-  margin-left: 4px;
-}
-#A21,
-#A22,
-#B21,
-#B22,
-#C21,
-#D21,
-#D22,
-#E21,
-#E22,
-#F21,
-#F22,
-#I16 {
-  margin-right: 8px;
-}
-#A02,
-#B02,
-#C02,
-#D02,
-#E02,
-#F02 {
-  margin-left: 8px;
-}
 
-.seatsBtn {
-  height: 24px;
-  width: 20px;
-  border-radius: 4px;
-  background-color: white;
-  border: 1px solid black;
-}
-.seatsBtn p {
-  font-size: 10px;
-}
-.seatsBtn:hover {
-  background-color: #ef5b2b;
-}
-.seatsBtn.selected {
-  background-color: #1c8394;
-}
+
 /*  */
 /*  */
 /*  */
-.buyTicketCalculator {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-}
-/* .left2frContainer {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-} */
-.calculateLeft {
-  height: 100%;
-}
-#chosenSeatsList {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.qtyBox {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ticketsNumber {
-  display: flex;
-}
 
-.tktPrice,
-.qtyPlaceholder {
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-}
+
 
 .qty-un {
   font-size: 20px;
 }
-.totalAmountBox {
-  height: 50%;
-}
 
-.qty {
-  height: 32px;
-  width: 32px;
-  border-radius: 50%;
-  font-size: 24px;
-  font-weight: 500;
-  border: none;
-  color: white;
-  background-color: #1c8394;
-}
-.qty:hover {
-  background-color: #6f0013;
-}
-.totalPriceBox {
-  height: 100%;
-}
-.right1frContainer {
-  height: 100%;
-  /* display: flex;
-  align-items: center; */
-  text-align: center;
-}
-.nextPayStep {
-  margin-left: auto;
-}
-.nextPayStep ion-icon {
-  font-size: 48px;
-  color: #6f0013;
-}
-/* .previousPage {
-  display: flex;
-  align-items: center;
-}
-.previousPage ion-icon {
-  font-size: 48px;
-  color: #6f0013;
-} */
-.b-t-calc-right {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: self-end;
-}
-.b-t-calc-right ion-icon {
-  font-size: 48px;
-  color: #6f0013;
-}
 
-.right1frContainerResponsive {
-  display: none !important;
-}
-.buyTicketCalculatorResponsive {
-  display: none !important;
-}
-.buySessionInfoResponsive {
-  display: none !important;
-  visibility: hidden !important;
-  font-family: afacad;
-  text-align: center;
-}
-.right1frContainerResponsive,
-.buyTicketCalculatorResponsive {
-  width: 200px;
-  border: 2px solid blue;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: afacad;
-}
-.right1frContainerResponsive {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: center;
-}
-/* .left2frContainerResponsive {
-  margin-top: 1rem;
-} */
-.calculateLeftResponsive {
-  height: fit-content;
-  margin-top: 1rem;
-}
-.nextPayStepResponsive {
-  margin-left: auto;
-  margin-right: auto;
-}
-.nextPayStepResponsive ion-icon {
-  font-size: 48px;
-  color: #6f0013;
-}
-#chosenSeatsListResponsive {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  height: 1rem;
-}
-#seatsContainerResponsive {
-  display: flex;
-  align-items: center;
-}
+
+
+
+
+
+
+
 
 /* *************************************** */
 /* SLIDER */

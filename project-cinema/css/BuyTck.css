@@ -75,7 +75,8 @@
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: 240px;
+  /* height: 240px; */
+  height: fit-content;
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   gap: 2rem;
@@ -112,10 +113,6 @@
   font-family: afacad;
   font-size: 16px;
 }
-/* .seatsSlider {
-
-  border: 2px solid red;
-} */
 
 .seatsContainer {
   display: flex;
@@ -140,7 +137,7 @@
 .seatsLetter {
   width: 18px;
   color: #6f0013;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
@@ -167,7 +164,7 @@
 #F21,
 #F22,
 #I16 {
-  margin-right: 8px;
+  margin-right: 16px;
 }
 #A02,
 #B02,
@@ -175,18 +172,20 @@
 #D02,
 #E02,
 #F02 {
-  margin-left: 8px;
+  margin-left: 16px;
 }
 
 .seatsBtn {
-  height: 24px;
-  width: 20px;
+  /* height: 24px; */
+  height: 48px;
+  /* width: 20px; */
+  width: 40px;
   border-radius: 4px;
   background-color: white;
   border: 1px solid black;
 }
 .seatsBtn p {
-  font-size: 10px;
+  font-size: 14px;
 }
 .seatsBtn:hover {
   background-color: #ef5b2b;
