@@ -7,6 +7,10 @@
   /* .buyTicketStepsPage {
     display: none;
   } */
+  .linksHeader,
+  .linksHeaderMovieDetail {
+    height: 175px;
+  }
   .mainMovieDetailResponsive {
     display: block !important;
   }
