@@ -29,7 +29,10 @@
   }
 } */
 @media screen and (max-width: 700px) {
-  .meJuniorWeb {
+  /* .meJuniorWeb {
+    display: none;
+  } */
+  .block-image {
     display: none;
   }
   .modalBox {
