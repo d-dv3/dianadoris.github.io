@@ -40,7 +40,7 @@
 }
 .fullPageLink {
   position: fixed;
-  inset: 0; /* inset (inserir) all around 0 */
+  inset: 0;
   z-index: 10;
 }
 .markMessage {
@@ -98,9 +98,7 @@ hr {
   margin: 0 auto auto auto;
   background-color: #6f001211;
 }
-/*  */
 .openingProgramHeader {
-  /* height: fit-content; */
   height: 350px;
   align-items: center;
   background-color: rgb(28, 131, 148, 0.3);
@@ -112,7 +110,6 @@ hr {
 .navigationLinks {
   position: absolute;
   top: 4px;
-  /* margin-left: 48px; */
   margin-left: 4px;
 }
 .navigationLinks a img {
@@ -282,7 +279,6 @@ hr {
   border: 3px solid #1c8394;
   color: #1c8394;
 }
-/*  */
 footer {
   display: flex;
   align-items: center;

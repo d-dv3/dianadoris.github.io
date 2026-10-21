@@ -4,9 +4,6 @@
   }
 }
 @media (max-width: 1050px) {
-  /* .buyTicketStepsPage {
-    display: none;
-  } */
   .linksHeader,
   .linksHeaderMovieDetail {
     height: 175px;
@@ -25,39 +22,7 @@
     display: none;
   }
 }
-@media (max-width: 870px) {
-  .step1Form {
-    height: fit-content;
-  }
-  .row {
-    justify-self: center;
-  }
-  .buySessionInfo,
-  .buyTicketCalculator,
-  s .buySessionInfo {
-    display: none !important;
-    visibility: hidden !important;
-  }
-  .right1frContainerResponsive {
-    display: block !important;
-  }
-  .buyTicketCalculatorResponsive {
-    display: block !important;
-  }
-  .buySessionInfoResponsive {
-    display: block !important;
-  }
-  /* .seatsContainer {
-    margin-left: auto;
-    margin-right: auto;
-  } */
-  #gridSeats {
-    /* display: flex; */
-    align-items: center;
-  }
-}
 @media (max-width: 800px) {
-  /*  */
   .sessionHour {
     font-size: 18px;
   }
@@ -74,7 +39,6 @@
   .secondPrgph {
     display: none;
   }
-  /* .mAuthors, */
   .sessionHour {
     padding-left: 8px;
   }
@@ -108,20 +72,13 @@
   .saveSpot p {
     font-size: 20px;
   }
-  /* .navigationLinks {
-    margin-left: 8px;
-  } */
   .navigationLinks a img {
     margin-right: 8px;
-  }
-  .homeLink {
-    /* margin-top: 40px; */
   }
   .subTitleProgramPage {
     line-height: 1;
   }
 }
-
 @media (max-width: 520px) {
   .mainTitle {
     font-size: 140px;
@@ -132,12 +89,7 @@
   .markMessage {
     font-size: 40px;
   }
-  /*
-  .saveDate {
-    font-size: 24px;
-  }*/
 }
-
 @media (max-width: 440px) {
   .mainTitle {
     font-size: 100px;
@@ -152,7 +104,6 @@
     font-size: 18px;
   }
 }
-
 @media (max-width: 320px) {
   .mainTitle {
     font-size: 96px;
@@ -163,70 +114,4 @@
   .markMessage {
     font-size: 24px;
   }
-  /*
-  .saveDate {
-    font-size: 24px;
-  }*/
 }
-/* SLIDER BUY TICKET */
-/* --- WIDE SCREENS: all 3 panels side by side, no sliding --- */
-/* @media (min-width: 870px) {
-  .buySessionContainer {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  .buySessionSlider { */
-/* display: grid;
-    grid-template-columns: 1fr 2fr 1fr; */
-/* Cancel out any transform the JS applied while the page was
-       narrow — !important is needed because it's beating an
-       inline style set by JS, not just another stylesheet rule */
-/* transform: none !important;
-  } */
-
-/* .buySessionSlider > div {
-    flex: initial; */
-/* Grid items default to min-width: auto, which can force
-       overflow if content (like the seat grid) is wide. This lets
-       the column shrink and rely on its own internal scrolling
-       instead of blowing out the row. */
-/* min-width: 0;
-  } */
-
-/* Arrows/sliding only make sense when panels are hidden one at
-     a time — with everything visible there's nothing to page through */
-/* .buyTicketSliderBtn {
-    display: none;
-  }
-} */
-
-/* ============================================================
-   SEAT GRID
-   ============================================================ */
-
-/* Let the seat grid scroll horizontally within its own panel
-   rather than forcing the whole page to scroll sideways */
-/* .seatsSlider,
-#seatsContainerResponsive {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  max-width: 100%;
-} */
-
-/* Center the seat grid block within its panel. width: fit-content
-   + margin: 0 auto centers it when there's room, and — unlike flex
-   justify-content: center — still scrolls correctly from the true
-   left edge if the grid is ever wider than the panel. */
-/* #gridSeatsContainer {
-  width: fit-content;
-  margin: 0 auto;
-} */
-
-/* Shrink the seat buttons on small screens so less scrolling is needed */
-/* @media (max-width: 600px) {
-  .seatsBtn {
-    min-width: 26px;
-    padding: 2px 4px;
-    font-size: 11px;
-  }
-} */
