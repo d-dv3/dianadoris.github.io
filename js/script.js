@@ -23,15 +23,17 @@ const translation = {
     desThink:
       "user experience | design thinking | user interface | visual design | design systems | figma",
     trainG: "training",
-    titleAI: "AI foundations for everyone",
-    txtAI: "introduction to Artificial Intelligence (AI)",
+    // titleEx: "AI foundations for everyone",
+    txtEx: "use spreadsheets to record, analyze, and control data",
     titleWeb: "build responsive real-world websites - HTML and CSS",
     workX: "work experience",
     admCust: "administrative | customer support",
     accS: "accountant support in PortSpar Retail, lda",
-    // acTasks:"registering and verifying invoices with sales representatives and suppliers in order to support the accounting department"
+    acTasks:
+      "registering and verifying invoices with sales representatives and suppliers in order to support the accounting department",
     cusSup: "customer support - portuguese/ english market, AirBnb, Sitel",
-    //cusSupTasks: "analysis and response to customer requests and complaints, by phone and in writing, in Portuguese and English<br> resolution of dissatisfaction situations, including gathering information from the parties involved<br> registration and monitoring of cases until resolution, complying with procedures defined by the company.",
+    cusSupTasks:
+      "analysis and response to customer requests and complaints, by phone and in writing, in Portuguese and English<br> resolution of dissatisfaction situations, including gathering information from the parties involved<br> registration and monitoring of cases until resolution, complying with procedures defined by the company.",
     archJew: "architecture | jewelry Design",
     jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
     pres: "present - 2012",
@@ -55,13 +57,13 @@ const translation = {
     othDigSk: "other digital skills ",
     madeBy: "using html5, css3,responsive: media querie to pdf, javascript",
     // dates
-    sept: "jun. 2026 - sept. 2026",
+    sept: "jun. 2026 - sep. 2026",
     febApr: "feb. 2026 - apr. 2026",
     decJun: "dec. 2022 - jun. 2023",
-    apr: "apr. 2026  - ",
+    apr: "oct. 2026",
     febMar: "feb. 2022 - mar. 2023",
     janFeb: "jan. 2018 - feb. 2020",
-    present: "present - 2012",
+    present: "2012 - present",
   },
   pt: {
     mainSentence: "Olá, sou uma desenvolvedora web estagiária!",
@@ -87,8 +89,8 @@ const translation = {
     desThink:
       "experiência do utilizador | design thinking | interface do utilizador | design visual | design systems | figma",
     trainG: "treinamento",
-    titleAI: "AI foundations for everyone",
-    txtAI: "introdução à Inteligência Artificial (IA)",
+    // titleEx: "AI foundations for everyone",
+    txtEx: "uso de folhas de excel para registrar, analisar e controlar dados",
     titleWeb:
       "construção de websites realistas e responsivos - em  HTML e CSS ",
     workX: "experiência de trabalho",
@@ -127,7 +129,7 @@ const translation = {
     sept: "jun. 2026 - set. 2026",
     febApr: "fev. 2026 - abr. 2026",
     decJun: "dez. 2022 - jun. 2023",
-    apr: "abr. 2026  - ",
+    apr: "out. 2026",
     febMar: "fev. 2022 - mar. 2023",
     janFeb: "jan. 2018 - fev. 2020",
     present: "present - 2012",
