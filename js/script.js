@@ -35,7 +35,8 @@ const translation = {
     cusSupTasks:
       "analysis and response to customer requests and complaints, by phone and in writing, in Portuguese and English<br> resolution of dissatisfaction situations, including gathering information from the parties involved<br> registration and monitoring of cases until resolution, complying with procedures defined by the company.",
     archJew: "architecture | jewelry Design",
-    jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
+    // jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
+    jewFree: "jewelry designer and maker",
     pres: "present - 2012",
     JewFreelance:
       " I created my own brand - 'Diana Dóris', designed its logo and packaging. I set up the environment and setting for the photoshoot of the first jewelry collection. I created a website for this collection where I narrated the storytelling and making-of of the 'Botânica' pieces.",
@@ -102,7 +103,8 @@ const translation = {
     cusSupTasks:
       "análise e resposta a solicitações e reclamações de clientes, por telefone e por escrito, em português e inglês; resolução de situações de insatisfação, incluindo a coleta de informações das partes envolvidas; registro e acompanhamento de casos até a resolução, cumprindo os procedimentos definidos pela empresa",
     archJew: " arquitetura | design de joias",
-    jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
+    // jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
+    jewFree: "design e fabrico de joias",
     present: "2012 - presente",
     JewFreelance:
       "Criei minha própria marca - 'Diana Dóris', desenhei seu logotipo e embalagem. Preparei o ambiente e o cenário para a sessão de fotos da primeira coleção. Criei um site para essa coleção, onde narrei a história e o processo de criação das peças 'Botânica'. ",
@@ -132,7 +134,7 @@ const translation = {
     apr: "out. 2026",
     febMar: "fev. 2022 - mar. 2023",
     janFeb: "jan. 2018 - fev. 2020",
-    present: "present - 2012",
+    // present: "present - 2012",
   },
 };
 
