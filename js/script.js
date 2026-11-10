@@ -29,7 +29,9 @@ const translation = {
     workX: "work experience",
     admCust: "administrative | customer support",
     accS: "accountant support in PortSpar Retail, lda",
+    // acTasks:"registering and verifying invoices with sales representatives and suppliers in order to support the accounting department"
     cusSup: "customer support - portuguese/ english market, AirBnb, Sitel",
+    //cusSupTasks: "analysis and response to customer requests and complaints, by phone and in writing, in Portuguese and English<br> resolution of dissatisfaction situations, including gathering information from the parties involved<br> registration and monitoring of cases until resolution, complying with procedures defined by the company.",
     archJew: "architecture | jewelry Design",
     jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
     pres: "present - 2012",
@@ -92,10 +94,14 @@ const translation = {
     workX: "experiência de trabalho",
     admCust: "administrativo | apoio ao cliente ",
     accS: "apoio à contabilidade, PortSpar Retail, lda",
+    acTasks:
+      "registrar e verificar faturas junto a representantes de vendas e fornecedores para dar suporte ao departamento de contabilidade",
     cusSup: "suporte ao cliente, mercado inglês e português, AirBnb, Sitel",
+    cusSupTasks:
+      "análise e resposta a solicitações e reclamações de clientes, por telefone e por escrito, em português e inglês; resolução de situações de insatisfação, incluindo a coleta de informações das partes envolvidas; registro e acompanhamento de casos até a resolução, cumprindo os procedimentos definidos pela empresa",
     archJew: "arquitetura | design de joias",
     jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
-    pres: "presente - 2012",
+    present: "2012 - presente",
     JewFreelance:
       "Criei minha própria marca - 'Diana Dóris', desenhei seu logotipo e embalagem. Preparei o ambiente e o cenário para a sessão de fotos da primeira coleção. Criei um site para essa coleção, onde narrei a história e o processo de criação das peças 'Botânica'. ",
     jewAC: "aprendiz de joalharia, António Castro, Gondomar",
