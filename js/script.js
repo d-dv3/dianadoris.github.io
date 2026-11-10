@@ -26,7 +26,7 @@ const translation = {
     // titleEx: "AI foundations for everyone",
     txtEx: "use spreadsheets to record, analyze, and control data",
     titleWeb: "build responsive real-world websites - HTML and CSS",
-    workX: "work experience",
+    workX: "work experience_ ",
     admCust: "administrative | customer support",
     accS: "accountant support in PortSpar Retail, lda",
     acTasks:
@@ -77,7 +77,7 @@ const translation = {
     devOut: "desenvolvedor de low code_ outsystems",
     onG: "< a decorrer >",
     alG: "fundamentos de algoritmia e programação orientada a objetos",
-    devMeth: "desenvolvimento de software",
+    devMeth: "desenvolvimento de software, ",
     sysAnal: "modelação e análise de sistemas de informação",
     dataMan: "desenho de base de dados | advanced transact SQL",
     ccod: "código criativo",
@@ -93,7 +93,7 @@ const translation = {
     txtEx: "uso de folhas de excel para registrar, analisar e controlar dados",
     titleWeb:
       "construção de websites realistas e responsivos - em  HTML e CSS ",
-    workX: "experiência de trabalho",
+    workX: "experiência de trabalho_ ",
     admCust: "administrativo | apoio ao cliente ",
     accS: "apoio à contabilidade, PortSpar Retail, lda",
     acTasks:
@@ -101,7 +101,7 @@ const translation = {
     cusSup: "suporte ao cliente, mercado inglês e português, AirBnb, Sitel",
     cusSupTasks:
       "análise e resposta a solicitações e reclamações de clientes, por telefone e por escrito, em português e inglês; resolução de situações de insatisfação, incluindo a coleta de informações das partes envolvidas; registro e acompanhamento de casos até a resolução, cumprindo os procedimentos definidos pela empresa",
-    archJew: "arquitetura | design de joias",
+    archJew: " arquitetura | design de joias",
     jewFree: "design e fabrico de joalharia de autor, 'diana dóris', freelance",
     present: "2012 - presente",
     JewFreelance:
@@ -112,7 +112,7 @@ const translation = {
     jewDes: "design de joalharia",
     archTitle: "arquitetura",
     meTitle: "sobre mim",
-    meTxt01: "Fazendo uma requalificação digital.",
+    // meTxt01: "Fazendo uma requalificação digital.",
     meTxt01:
       "Sou formada em Arquitetura e tenho vindo a atualizar os meus conhecimentos, nomeadamente na área das tecnologias.",
     meTxt02: "Sou criativa, com um bom sentido de responsabilidade.",
