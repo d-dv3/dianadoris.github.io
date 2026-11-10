@@ -1,31 +1,29 @@
 const translation = {
   en: {
-    mainSentence: "Hi, I'm a trainee web developer",
-    checkOut: "check out my website <b>dianadoris.com</b>",
+    // mainSentence: "Hi, I'm a trainee web developer",
+    checkOut: "Hi, check out my website <b>dianadoris.com</b>",
     fpct: "training internship",
     fpct01:
       "application developed in Power Apps, made with sharepoint list's as database, and connected with Power Automate to automate the procedures for ordering safety equipment. Project carried out in the context of the Safety, Environment and Quality (QAS) team, which helped me understand the needs of each team. I also had the support of other colleagues - employees of the workshops (who will use the safety equipment) in order to survey the day-to-day needs",
     fpct02:
       "Power Apps application for Kamishibai - one of the processes of the Kaizen (continuous improvement) methodology. It combines data from different company teams, aiming to correlate data with Power BI to monitor the results of all departments",
     edu: "education",
-    devOut: "low code developer_ outsystems",
-    onG: "< on going >",
+    devOut: "low-code developer_ outsystems",
+    // onG: "< on going >",
     alG: "algorithms fundamentals and object-oriented programming",
     devMeth: "software development, ",
     sysAnal: "information systems, modeling and analysis",
-    dataMan: "database design | advanced transact SQ, HTML, CSS, Javascript",
-    ccod: "creative coding",
-    ccodP:
-      "processing | editing images through generative and parametric design",
-    //
-    //
+    dataMan: "database design | advanced transact SQL, HTML, CSS, Javascript",
+    // ccod: "creative coding",
+    // ccodP:
+    //   "processing | editing images through generative and parametric design",
     uiUx: "user experience & user interface design",
     desThink:
       "user experience | design thinking | user interface | visual design | design systems | figma",
     trainG: "training",
     // titleEx: "AI foundations for everyone",
     txtEx: "use spreadsheets to record, analyze, and control data",
-    titleWeb: "build responsive real-world websites - HTML and CSS",
+    titleWeb: "build responsive real-world websites",
     workX: "work experience_ ",
     admCust: "administrative | customer support",
     accS: "accountant support",
@@ -37,11 +35,11 @@ const translation = {
     archJew: "architecture | jewelry Design",
     // jewFree: "jewelry designer and maker, freelance 'Diana Dóris'",
     jewFree: "jewelry designer and maker",
-    pres: "present - 2012",
+    // pres: "present - 2012",
     JewFreelance:
       "created my own brand, 'diana dóris' designed its logo and packaging. Prepared the setting and photoshoot for the first jewelry collection. Created a website for this collection, where the story is told from the development of the idea to the creation of the 'Botânica' pieces.",
     jewAC: "jewelry maker",
-    archJFG: "arquitect in José Fernando Gonçalves atelier, Porto",
+    // archJFG: "arquitect in José Fernando Gonçalves atelier, Porto",
     arch: "architect",
     jewDes: "jewelry design",
     archTitle: "architecture",
@@ -54,11 +52,11 @@ const translation = {
     compDig: "digital skills: &nbsp",
     othSk: "other skills: &nbsp",
     lanE: "english",
-    othDigSk: "other digital skills ",
+    // othDigSk: "other digital skills ",
     madeBy: "using:",
     // dates
     sept: "jun. 2026 - sep. 2026",
-    febApr: "feb. 2026 - apr. 2026",
+    // febApr: "feb. 2026 - apr. 2026",
     decJun: "dec. 2022 - jun. 2023",
     apr: "oct. 2026",
     febMar: "feb. 2020 - mar. 2023",
@@ -74,7 +72,7 @@ const translation = {
     fpct02:
       "desenvolvimento de uma app em Power Apps para o Kamishibai - um dos processos da metodologia Kaizen (melhoria contínua). Combina os dados de diferentes equipas da empresa, com o objetivo de correlacioná-los com o Power BI para monitorizar os resultados de todos os departamentos",
     edu: "educação",
-    devOut: "desenvolvedor de low code_ outsystems",
+    devOut: "programadora de low-code_ outsystems",
     // onG: "< a decorrer >",
     alG: "fundamentos de algoritmia e programação orientada a objetos",
     devMeth: "desenvolvimento de software, ",
@@ -96,10 +94,10 @@ const translation = {
       "construção de websites realistas e responsivos - em  HTML e CSS ",
     workX: "experiência de trabalho_ ",
     admCust: "administrativo | apoio ao cliente ",
-    accS: "apoio à contabilidade, PortSpar Retail, lda",
+    accS: "apoio à contabilidade",
     acTasks:
       "registar e verificar faturas junto a representantes de vendas e fornecedores para apoiar o departamento de contabilidade",
-    cusSup: "suporte ao cliente, mercado inglês e português, AirBnb, Sitel",
+    cusSup: "apoio ao cliente, mercado português/ inglês",
     cusSupTasks:
       "análise e resposta a solicitações e reclamações de clientes, por telefone e por escrito, em português e inglês; resolução de situações de insatisfação, incluindo a recolha de informações das partes envolvidas; registo e acompanhamento de casos até a resolução, cumprindo os procedimentos definidos pela empresa",
     archJew: " arquitetura | design de joias",
@@ -108,7 +106,7 @@ const translation = {
     present: "2012 - presente",
     JewFreelance:
       "Criei a minha própria marca, 'diana dóris', desenhei o seu logotipo e embalagem. Preparei o ambiente e o cenário para a sessão de fotos da primeira coleção. Criei um site para essa coleção, onde narrei a história e o processo de criação das peças 'Botânica'. ",
-    jewAC: "aprendiz de joalharia, António Castro, Gondomar",
+    jewAC: "aprendiz de joalharia",
     arch: "arquiteta",
     // archJFG: "arquiteta, José Fernando Gonçalves atelier, Porto",
     jewDes: "design de joias",
@@ -140,6 +138,7 @@ const translation = {
 let currentLang = "en";
 
 function applyLang() {
+  document.documentElement.lang = currentLang;
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     el.innerHTML = translation[currentLang][el.dataset.i18n];
   });
